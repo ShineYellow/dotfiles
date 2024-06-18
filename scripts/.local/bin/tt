@@ -1,2 +1,3 @@
-tmuxinator start $(tmuxinator ls | sed 1d | tr ' ' '\n' | grep . | fzf)
+tmux attach -t $(tmux list-sessions -F '#{session_name}' | fzf)
+
 

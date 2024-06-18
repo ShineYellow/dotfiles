@@ -1,0 +1,2 @@
+tmuxinator start $(tmuxinator ls | sed 1d | tr ' ' '\n' | grep . | fzf)
+

@@ -77,9 +77,10 @@ alias vi="nvim"
 
 alias t="tmux"
 alias tn="tmux new-session"
-alias tk="tmux kill-session"
-alias ta="tmux attach"
-alias tr="tmux rename-session"
+# alias tk="tmux kill-session"
+# alias ta="tmux attach"
+# alias tr="tmux rename-session"
+alias trs="tmux rename-session -t $(tmux display-message -p '#S')"
 alias mux="tmuxinator"
 
 alias cat="bat"
