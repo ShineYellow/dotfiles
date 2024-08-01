@@ -15,6 +15,7 @@ applications = {
     -- J K is reserved for input methods
     -- P is reserved for vscode command list
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
+    -- osascript -e 'id of app "Application Name"'
     {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"CMD"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
     {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
