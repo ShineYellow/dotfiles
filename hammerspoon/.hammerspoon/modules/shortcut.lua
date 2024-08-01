@@ -20,7 +20,7 @@ applications = {
     {prefix = {"CMD"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
     {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
     {prefix = {"CMD"}, key = "4", message="Sublime", bundleId="com.sublimetext.4"},
-    {prefix = {"CMD"}, key = "F1", message="things3", bundleId="com.culturedcode.ThingsMac"},
+    {prefix = {"Ctrl"}, key = "F1", message="things3", bundleId="com.culturedcode.ThingsMac"},
     {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
     {prefix = {"CMD"}, key = "-", message="Finder", bundleId="com.apple.finder"},
     {prefix = {"CMD"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
@@ -31,9 +31,10 @@ applications = {
     {prefix = {"CMD"}, key = "M", message="email", bundleId="com.apple.mail"},
     {prefix = {"CMD", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
     {prefix = {"CMD"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
-    {prefix = {"CMD"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
-    -- {prefix = {"CMD"}, key = "P", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
-
+    {prefix = {"CMD","SHIFT"}, key = "O", message="OpenVPN", bundleId="org.openvpn.client.app"},
+    {prefix = {"CMD"}, key = "I", message="Noi", bundleId="com.electron.noi"},
+    {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
+    {prefix = {"CMD","SHIFT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
 }
 
 
