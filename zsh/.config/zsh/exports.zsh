@@ -15,6 +15,7 @@ export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.fnm:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export XDG_CURRENT_DESKTOP="Wayland"
+export PATH="$HOME/.config/emacs/bin:$PATH"
 #export PATH="$PATH:./node_modules/.bin"
 # eval "$(fnm env)"
 eval "$(zoxide init zsh)"
