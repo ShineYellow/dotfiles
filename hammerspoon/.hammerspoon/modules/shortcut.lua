@@ -35,6 +35,11 @@ applications = {
     {prefix = {"CMD"}, key = "I", message="Noi", bundleId="com.electron.noi"},
     {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
     {prefix = {"CMD","SHIFT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
+    {prefix = {}, key = "F1", message="Chrome", bundleId="com.google.Chrome"},
+    {prefix = {}, key = "F2", message="Opera", bundleId="com.operasoftware.Opera"},
+    {prefix = {}, key = "F3", message="Brave", bundleId="com.brave.Browser"},
+    {prefix = {}, key = "F4", message="Edge", bundleId="com.microsoft.edgemac"},
+
 }
 
 
