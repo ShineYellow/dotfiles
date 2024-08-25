@@ -26,6 +26,13 @@ plug "zsh-users/zsh-syntax-highlighting"
 #
 # eval "$(starship init zsh)"
 
+# n Zsh, the no_nomatch option is used to control how the shell handles glob patterns that do not match any files. 
+# By default, Zsh will generate an error if a glob pattern does not match any files, 
+# displaying a message like zsh: no matches found: pattern. #
+# This behavior can be problematic in scripts or commands where unmatched patterns are acceptable or expected.
+setopt no_nomatch
+
+
 # plug "spaceship-prompt/spaceship-prompt"
 
 UNAME_MACHINE="$(/usr/bin/uname -m)"
@@ -51,5 +58,8 @@ if command -v bat &> /dev/null; then
   alias cat="bat -pp --theme \"Visual Studio Dark+\"" 
   alias catt="bat --theme \"Visual Studio Dark+\"" 
 fi
+
+
+
 
 
