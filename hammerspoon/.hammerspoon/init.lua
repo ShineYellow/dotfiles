@@ -10,3 +10,4 @@ require("modules.applications")
 
 require("modules.window")
 
+require("modules.exit")
