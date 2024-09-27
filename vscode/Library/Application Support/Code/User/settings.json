@@ -1,498 +1,121 @@
 {
+    "vspacecode.bindingOverrides": [
+        {
+            "keys": "a",
+            "name": "+AI",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "a",
+                    "name": "cursor chat",
+                    "type": "command",
+                    "command": "aichat.newchataction",
+                },
+                {
+                    "key": "x",
+                    "name": "close chat",
+                    "type": "command",
+                    "command": "aichat.close-sidebar",
+                },
+                {
+                    "key": "k",
+                    "name": "cursor edit",
+                    "type": "command",
+                    "command": "aipopup.action.modal.generate",
+                }
+            ]
+        },
+        {
+            "keys": "l",
+            "name": "lsp",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "format",
+                    "type": "command",
+                    "command": "editor.action.formatDocument",
+                },
+            ]
+        },
+        {
+            "keys": "-",
+            "name": "Split window below",
+            "icon": "split-vertical",
+            "type": "command",
+            "command": "workbench.action.splitEditorDown"
+        },
+        {
+            "keys": "/",
+            "name": "Split window right",
+            "icon": "split-horizontal",
+            "type": "command",
+            "command": "workbench.action.splitEditor"
+        },
+    ],
     "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.visualstar": true,
-    "vim.ignorecase": false,
     "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "k",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.leader": " ",
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "v"
-            ],
-            "commands": [
-                "editor.action.smartSelect.expand"
-            ]
-        },
-        {
-            "before": [
-                "%"
-            ],
-            "commands": [
-                "extension.matchitJumpItems"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "x"
-            ],
-            "commands": [
-                "editor.action.smartSelect.expand"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "z",
-                "z"
-            ],
-            "commands": [
-                "editor.action.smartSelect.shrink"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "/"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
-        {
-            "before": [
-                "<leader",
-                "a",
-                "a"
-            ],
-            "commands": [
-                "editor.action.clipboardCopyAction"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "q",
-                "q"
-            ],
-            "commands": [
-                "workbench.action.findInFiles"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "s",
-                "s"
-            ],
-            "commands": [
-                "actions.find"
-            ]
-        }
-    ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "<C-]>"
+                "<space>"
             ],
             "commands": [
-                "workbench.action.togglePanel"
+                "vspacecode.space"
             ]
         },
         {
             "before": [
-                "g",
-                "r"
+                ","
             ],
             "commands": [
-                "editor.action.goToReferences"
-            ]
-        },
-        {
-            "before": [
-                "g",
-                "i"
-            ],
-            "commands": [
-                "editor.action.goToImplementation"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "commands": [
-                "workbench.action.toggleSidebarVisibility"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "l",
-                "r"
-            ],
-            "commands": [
-                "editor.action.rename"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "q",
-                "q"
-            ],
-            "commands": [
-                "workbench.action.findInFiles"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "p"
-            ],
-            "commands": [
-                "workbench.action.files.copyPathOfActiveFile"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "n"
-            ],
-            "commands": [
-                "copyRelativeFilePath"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "t",
-                "p"
-            ],
-            "commands": [
-                "workbench.action.togglePanel"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "m"
-            ],
-            "commands": [
-                "workbench.action.showCommands"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "/"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "x"
-            ],
-            "commands": [
-                "editor.action.smartSelect.expand"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "z",
-                "z"
-            ],
-            "commands": [
-                "editor.action.smartSelect.shrink"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "t",
-                "a"
-            ],
-            "commands": [
-                "workbench.action.toggleActivityBarVisibility"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "t",
-                "b"
-            ],
-            "commands": [
-                "workbench.action.toggleSidebarVisibility"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.files.save"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "s",
-                "s"
-            ],
-            "commands": [
-                "actions.find"
-            ]
-        },
-        {
-            "before": [
-                "%"
-            ],
-            "commands": [
-                "extension.matchitJumpItems"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "s",
-                "i"
-            ],
-            "commands": [
-                "extension.matchitSelectItems"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "d",
-                "i"
-            ],
-            "commands": [
-                "extension.matchitDeleteItems"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.files.openFile"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "r",
-                "r"
-            ],
-            "commands": [
-                "workbench.action.openRecent"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "k",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "i",
-                "i"
-            ],
-            "commands": [
-                "workbench.action.gotoSymbol"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "1"
-            ],
-            "commands": [
-                "workbench.action.editorLayoutSingle"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "|"
-            ],
-            "commands": [
-                "workbench.action.splitEditorRight"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "_"
-            ],
-            "commands": [
-                "workbench.action.splitEditorDown"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "4"
-            ],
-            "commands": [
-                "workbench.action.editorLayoutTwoByTwoGrid"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "0"
-            ],
-            "commands": [
-                "workbench.action.closeGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "x",
-                "z"
-            ],
-            "commands": [
-                "workbench.action.terminal.focus"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.toggleZenMode"
-            ]
-        },
-        {
-            "before": [
-                "<C-h>"
-            ],
-            "after": [
-                "<C-w>",
-                "h"
-            ]
-        },
-        {
-            "before": [
-                "<C-j>"
-            ],
-            "after": [
-                "<C-w>",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "after": [
-                "<C-w>",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "after": [
-                "<C-w>",
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "q"
-            ],
-            "after": [
-                ":wq"
-            ],
-        }
-    ],
-    "vim.handleKeys": {
-        "<C-a>": false,
-    },
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "leetcode.defaultLanguage": "java",
-    "leetcode.endpoint": "leetcode-cn",
-    "leetcode.workspaceFolder": "/Users/admin/.leetcode",
-    "settings.cycle": [
-        {
-            "id": "copilot",
-            "overrideWorkspaceSettings": true,
-            "values": [
+                "vspacecode.space",
                 {
-                    "github.copilot.inlineSuggest.enable": false
-                },
-                {
-                    "github.copilot.inlineSuggest.enable": true
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
                 }
             ]
         }
     ],
-    "workbench.settings.openDefaultKeybindings": true,
-    "github.copilot.inlineSuggest.enable": true,
-    "leetcode.hint.commandShortcut": false,
-    "leetcode.hint.configWebviewMarkdown": false,
-    "files.autoSave": "afterDelay",
-    "editor.renderWhitespace": "all",
-    "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-    "[go]": {
-        
-        "editor.insertSpaces": false,
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
         }
-    }
+    ],
+    "continue.showInlineTip": false,
+    "files.autoSave": "afterDelay"
 }
+
