@@ -1,5 +1,9 @@
 [
     {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.toggleTerminal",
+    },
+    {
         "key": "alt+h",
         "command": "workbench.action.navigateLeft"
     },
