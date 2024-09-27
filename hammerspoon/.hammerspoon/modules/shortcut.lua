@@ -17,6 +17,7 @@ applications = {
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
     -- osascript -e 'id of app "Application Name"'
     {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    {prefix = {"ALT"}, key = "1", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
     {prefix = {"CMD"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
     {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
     {prefix = {"CMD"}, key = "4", message="Sublime", bundleId="com.sublimetext.4"},
@@ -25,21 +26,24 @@ applications = {
     {prefix = {"CMD"}, key = "-", message="Finder", bundleId="com.apple.finder"},
     {prefix = {"CMD"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
     -- {prefix = {"CMD"}, key = "D", message="Calendar", bundleId="com.apple.iCal"},
-    {prefix = {"CMD"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
+    {prefix = {"CMD","SHIFT"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
+    {prefix = {"CMD"}, key = "N", message="next-chat", bundleId="com.yida.chatgpt.next.web"},
+    {prefix = {"CMD", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
     {prefix = {"CMD"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
     -- {prefix = {"CMD"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"CMD"}, key = "M", message="email", bundleId="com.apple.mail"},
-    {prefix = {"CMD", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
     {prefix = {"CMD"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
     {prefix = {"CMD","SHIFT"}, key = "O", message="OpenVPN", bundleId="org.openvpn.client.app"},
     {prefix = {"CMD"}, key = "I", message="Noi", bundleId="com.electron.noi"},
     {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
     {prefix = {"CMD","SHIFT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
-    {prefix = {}, key = "F1", message="Chrome", bundleId="com.google.Chrome"},
-    {prefix = {}, key = "F2", message="Opera", bundleId="com.operasoftware.Opera"},
+    {prefix = {}, key = "F1", message="Zen", bundleId="org.mozilla.com.zen.browser"},
+    {prefix = {}, key = "F2", message="Chrome", bundleId="com.google.Chrome"},
+    -- {prefix = {}, key = "F2", message="Opera", bundleId="com.operasoftware.Opera"},
     {prefix = {}, key = "F3", message="Brave", bundleId="com.brave.Browser"},
     {prefix = {}, key = "F4", message="Edge", bundleId="com.microsoft.edgemac"},
 
+  
 }
 
 
