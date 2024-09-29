@@ -17,8 +17,8 @@ applications = {
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
     -- osascript -e 'id of app "Application Name"'
     {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
-    {prefix = {"ALT"}, key = "1", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
-    {prefix = {"CMD"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
+    {prefix = {"CMD"}, key = "2", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
+    {prefix = {"ALT"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
     {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
     {prefix = {"CMD"}, key = "4", message="Sublime", bundleId="com.sublimetext.4"},
     {prefix = {"Ctrl"}, key = "F1", message="things3", bundleId="com.culturedcode.ThingsMac"},
