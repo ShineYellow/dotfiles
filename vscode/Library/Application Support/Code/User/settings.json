@@ -18,10 +18,22 @@
                     "command": "aichat.close-sidebar",
                 },
                 {
+                    "key": "c",
+                    "name": "close chat",
+                    "type": "command",
+                    "command": "aichat.close-sidebar",
+                },
+                {
                     "key": "k",
                     "name": "cursor edit",
                     "type": "command",
                     "command": "aipopup.action.modal.generate",
+                },
+                {
+                    "key": "i",
+                    "name": "cursor composer",
+                    "type": "command",
+                    "command": "composer.startComposerControlPanel",
                 }
             ]
         },
