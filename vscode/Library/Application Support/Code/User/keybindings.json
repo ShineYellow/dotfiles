@@ -1,4 +1,30 @@
 [
+    // {
+    //     "key": "escape",
+    //     "command": "workbench.action.terminal.kill",
+    //     "when": "terminalFocus &&  && view.title =~ /lazygit/"
+    // },
+    // {
+    //     "key": "escape",
+    //     "command": "workbench.action.terminal.toggleTerminal",
+    //     "when": "terminalFocus"
+    // },
+    // {
+    //     "key": "g",
+    //     "command": "workbench.action.terminal.focusNext",
+    //     "args": {
+    //         "findLazygit": true
+    //     },
+    //     "when": "terminalFocus && terminalProcessSupported && !terminalTextSelectedInFocused"
+    // },
+    {
+        "key": "shift+f",
+        "command": "vscode-harpoon.editEditors",
+    },
+    {
+        "key": "shift+m",
+        "command": "vscode-harpoon.addEditor",
+    },
     {
         "key": "ctrl+\\",
         "command": "workbench.action.terminal.toggleTerminal",
@@ -177,5 +203,10 @@
         "key": "ctrl+l",
         "command": "file-browser.stepIn",
         "when": "inFileBrowser"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
     }
 ]

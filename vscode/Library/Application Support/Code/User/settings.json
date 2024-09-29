@@ -1,6 +1,29 @@
 {
     "vspacecode.bindingOverrides": [
         {
+            "keys": "g",
+            "name": "lazygit",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "g",
+                    "name": "lazygit",
+                    "type": "command",
+                    "command": "lazygit.openLazygit",
+                    // "args": {
+                    //     "sequence": [
+                    //         {
+                    //             "command": "workbench.action.tasks.runTask",
+                    //             "args": "lazygit"
+                    //         },
+                    //         "workbench.action.terminal.focus",
+                    //         "workbench.action.toggleMaximizedPanel",
+                    //     ]
+                    // }
+                }
+            ]
+        },
+        {
             "keys": "a",
             "name": "+AI",
             "type": "bindings",
@@ -49,6 +72,79 @@
                     "command": "editor.action.formatDocument",
                 },
             ]
+        },
+        {
+            "keys": "h",
+            "name": "harpoon",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "edit editors",
+                    "type": "command",
+                    "command": "vscode-harpoon.editEditors",
+                },
+                {
+                    "key": "a",
+                    "name": "add",
+                    "type": "command",
+                    "command": "vscode-harpoon.addEditor",
+                },
+                {
+                    "key": "l",
+                    "name": "quick pick",
+                    "type": "command",
+                    "command": "vscode-harpoon.editorQuickPick",
+                },
+                {
+                    "key": "1",
+                    "name": "editors 1",
+                    "type": "command",
+                    "command": "vscode-harpoon.gotoEditor1",
+                },
+                {
+                    "key": "2",
+                    "name": "editors 2",
+                    "type": "command",
+                    "command": "vscode-harpoon.gotoEditor2",
+                },
+                {
+                    "key": "3",
+                    "name": "editors 3",
+                    "type": "command",
+                    "command": "vscode-harpoon.gotoEditor3",
+                },
+                {
+                    "key": "4",
+                    "name": "editors 4",
+                    "type": "command",
+                    "command": "vscode-harpoon.gotoEditor4",
+                },
+            ]
+        },
+        {
+            "keys": "1",
+            "name": "editors 1",
+            "type": "command",
+            "command": "vscode-harpoon.gotoEditor1",
+        },
+        {
+            "keys": "2",
+            "name": "editors 2",
+            "type": "command",
+            "command": "vscode-harpoon.gotoEditor2",
+        },
+        {
+            "keys": "3",
+            "name": "editors 3",
+            "type": "command",
+            "command": "vscode-harpoon.gotoEditor3",
+        },
+        {
+            "keys": "4",
+            "name": "editors 4",
+            "type": "command",
+            "command": "vscode-harpoon.gotoEditor4",
         },
         {
             "keys": "-",
@@ -498,5 +594,18 @@
     ],
     "continue.showInlineTip": false,
     "workbench.activityBar.orientation": "vertical",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "git.openRepositoryInParentFolders": "never",
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.harpoonAddWithNotification",
+            "sequence": [
+                "vscode-harpoon.addEditor",
+                {
+                    "command": "editor.action.showHover",
+                    "args": "File added to Harpoon"
+                }
+            ]
+        }
+    ]
 }
