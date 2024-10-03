@@ -6,6 +6,11 @@ function mv_pdf(){
   find . -name "*.pdf" -exec mv {} ./pdf \;
 }
 
+function mv_pptx(){
+  mkdir -p pptx
+  find . -name "*.pptx" -exec mv {} ./pptx \;
+}
+
 function mv_txt(){
   mkdir -p txt
   find . -name "*.txt" -exec mv {} ./txt \;
@@ -16,6 +21,24 @@ function mv_mp3(){
   find . -name "*.mp3" -exec mv {} ./mp3 \;
 }
 
+function mv_zip(){
+  mkdir -p zip
+  find . -name "*.zip" -exec mv {} ./zip \;
+}
+
+function mv_url(){
+  mkdir -p html
+  find . -name "*.url" -exec mv {} ./html \;
+}
+
+function mv(){
+  local type=$1
+  mkdir -p "${type}"
+  find . -name "*.${type}" -exec mv {} ./${type} \;
+
+}
+
+
 
 function main(){
   if [ "$1"== "p" ];then
@@ -24,8 +47,13 @@ function main(){
     mv_txt
   elif [ "$1" == "m" ];then
     mv_mp3
+  elif [ "$1" == "z" ];then
+    mv_zip
+  elif [ "$1" == "h" ];then
+    mv html
+    mv_url
   else
-    echo "Usage: mymv [p|t|m]"
+    echo "Usage: mymv [z|p|t|m]"
   fi
 }
 

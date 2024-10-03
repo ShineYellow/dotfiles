@@ -19,6 +19,10 @@ const path = require("path");
 
 function visitFiles(dirPath, fileType, dryRun = true, names) {
   // Read directory contents
+  console.log(
+    `debug info:Visiting files in directory: ${dirPath} with file type: ${fileType}`
+  )
+
   fs.readdir(dirPath, { withFileTypes: true }, (err, entries) => {
     if (err) {
       console.error("Error reading directory:", err);
@@ -29,7 +33,8 @@ function visitFiles(dirPath, fileType, dryRun = true, names) {
       const fullPath = path.join(dirPath, entry.name);
       if (entry.isDirectory()) {
         // Recurse if the entry is a directory
-        visitFiles(fullPath);
+        console.log(`debug info:Recursing into directory: ${fullPath}`)
+        visitFiles(fullPath, fileType, dryRun, names);
       } else {
         // Log file path or do something with the file
         if (path.extname(fullPath) != fileType) {
