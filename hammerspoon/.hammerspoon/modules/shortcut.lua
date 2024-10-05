@@ -35,7 +35,7 @@ applications = {
     {prefix = {"CMD"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
     {prefix = {"CMD","SHIFT"}, key = "O", message="OpenVPN", bundleId="org.openvpn.client.app"},
     {prefix = {"CMD"}, key = "I", message="Noi", bundleId="com.electron.noi"},
-    {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
+    -- {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
     {prefix = {"CMD","SHIFT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
     {prefix = {}, key = "F1", message="Zen", bundleId="org.mozilla.com.zen.browser"},
     {prefix = {}, key = "F2", message="Chrome", bundleId="com.google.Chrome"},
