@@ -56,7 +56,7 @@
                     "key": "i",
                     "name": "cursor composer",
                     "type": "command",
-                    "command": "composer.startComposerControlPanel",
+                    "command": "controlPanel.openControlPanel",
                 }
             ]
         },
