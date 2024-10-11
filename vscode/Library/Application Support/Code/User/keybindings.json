@@ -20,10 +20,12 @@
     {
         "key": "shift+f",
         "command": "vscode-harpoon.editEditors",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
     },
     {
         "key": "shift+m",
         "command": "vscode-harpoon.addEditor",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
     },
     {
         "key": "ctrl+\\",
