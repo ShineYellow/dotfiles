@@ -1,0 +1,43 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "autosave": { "after_delay": { "milliseconds": 1000 } },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2"
+  },
+  "language_models": {
+    "openai": {
+      "version": "1",
+      "api_url": "https://api.deepbricks.ai/v1/",
+      "available_models": [
+        {
+          "name": "GPT-4o-2024-08-06",
+          "max_tokens": 128000
+        },
+        {
+          "name": "Claude-3.5-Sonnet",
+          "max_tokens": 128000
+        }
+      ]
+    }
+  },
+  "theme": "Summercamp",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16
+  // "proxy": "http://127.0.0.1:7890"
+}
