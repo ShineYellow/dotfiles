@@ -96,6 +96,8 @@ alias ttr="tkn taskrun"
 
 alias pn="pnpm"
 
+alias c="cursor"
+
 alias proxy='export https_proxy="http://localhost:7890";export http_proxy="http://localhost:7890";echo -e "Proxy on"'
 
 if [[ $TERM == "xterm-kitty" ]]; then
