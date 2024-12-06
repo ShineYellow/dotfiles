@@ -8,7 +8,8 @@ input_methods = {
 
 -- 应用切换快捷键配置
 applications = {
-    -- X C V is reserved for clipboard
+    -- CMD z is reserved for revoke change
+    -- CMD + X C V is reserved for clipboard
     -- S is reserved for save 
     -- D is reserved for iterm2 split
     -- A is reserved for select all
@@ -16,18 +17,14 @@ applications = {
     -- P is reserved for vscode command list
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
     -- osascript -e 'id of app "Application Name"'
-    {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
-    {prefix = {"CMD"}, key = "2", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
-    {prefix = {"ALT"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
-    {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
-    {prefix = {"CMD"}, key = "4", message="Sublime", bundleId="com.sublimetext.4"},
-    {prefix = {"Ctrl"}, key = "F1", message="things3", bundleId="com.culturedcode.ThingsMac"},
-    {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
+    {prefix = {"Ctrl","SHIFT" ,"ALT"}, key = "Z", message="zotero", bundleId="org.zotero.zotero"},
+    {prefix = {}, key = "F2", message="things3", bundleId="com.culturedcode.ThingsMac"},
+    -- {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
     {prefix = {"CMD"}, key = "-", message="Finder", bundleId="com.apple.finder"},
-    {prefix = {"CMD"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
     -- {prefix = {"CMD"}, key = "D", message="Calendar", bundleId="com.apple.iCal"},
-    {prefix = {"CMD","SHIFT"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
-    {prefix = {"CMD"}, key = "N", message="next-chat", bundleId="com.yida.chatgpt.next.web"},
+    {prefix = {"CMD"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
+    -- {prefix = {"CMD"}, key = "N", message="next-chat", bundleId="com.yida.chatgpt.next.web"},
+    {prefix = {"Ctrl","SHIFT" ,"ALT"}, key = "N", message="next-chat", bundleId="com.yida.chatgpt.next.web"},
     {prefix = {"CMD", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
     {prefix = {"CMD"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
     -- {prefix = {"CMD"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
@@ -36,13 +33,32 @@ applications = {
     {prefix = {"CMD","SHIFT"}, key = "O", message="OpenVPN", bundleId="org.openvpn.client.app"},
     {prefix = {"CMD"}, key = "I", message="Noi", bundleId="com.electron.noi"},
     -- {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
-    {prefix = {"CMD","SHIFT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
-    {prefix = {}, key = "F1", message="Zen", bundleId="org.mozilla.com.zen.browser"},
-    {prefix = {}, key = "F2", message="Chrome", bundleId="com.google.Chrome"},
-    -- {prefix = {}, key = "F2", message="Opera", bundleId="com.operasoftware.Opera"},
-    {prefix = {}, key = "F3", message="Brave", bundleId="com.brave.Browser"},
-    {prefix = {}, key = "F4", message="Edge", bundleId="com.microsoft.edgemac"},
+    {prefix = {"Ctrl","SHIFT" ,"ALT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
+    {prefix = {"CMD"}, key = ",", message="Chrome", bundleId="com.google.Chrome"},
+    {prefix = {"CMD"}, key = ".", message="Zen Browser", bundleId="org.mozilla.com.zen.browser"},
 
+    {prefix = {"ALT"}, key = "C", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
+    {prefix = {}, key = "F1", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
+    {prefix = {"ALT"}, key = "I", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    {prefix = {"ALT"}, key = "V", message="VSCode", bundleId="com.microsoft.VSCode"},
+    {prefix = {"ALT"}, key = "Z", message="Zed", bundleId="dev.zed.Zed"},
+    {prefix = {"ALT"}, key = "S", message="Sublime", bundleId="com.sublimetext.4"},
+    -- {prefix = {}, key = "F1", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
+    -- {prefix = {"CMD","SHIFT"}, key = "I", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    -- -- {prefix = {}, key = "F3", message="VSCode", bundleId="com.microsoft.VSCode"},
+    -- {prefix = {"CMD","SHIFT"}, key = "Z", message="Zed", bundleId="dev.zed.Zed"},
+    -- {prefix = {"CMD","SHIFT"}, key = "S", message="Sublime", bundleId="com.sublimetext.4"},
+    -- {prefix = {}, key = "F1", message="Zen", bundleId="org.mozilla.com.zen.browser"},
+    -- {prefix = {}, key = "F2", message="Chrome", bundleId="com.google.Chrome"},
+    -- -- {prefix = {}, key = "F2", message="Opera", bundleId="com.operasoftware.Opera"},
+    -- {prefix = {}, key = "F3", message="Brave", bundleId="com.brave.Browser"},
+    -- {prefix = {}, key = "F4", message="Edge", bundleId="com.microsoft.edgemac"},
+
+    -- {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    -- {prefix = {"CMD"}, key = "2", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
+    -- {prefix = {"ALT"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
+    -- {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
+    -- {prefix = {"CMD"}, key = "4", message="Sublime", bundleId="com.sublimetext.4"},
   
 }
 
