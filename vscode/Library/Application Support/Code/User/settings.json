@@ -607,5 +607,7 @@
                 }
             ]
         }
-    ]
+    ],
+    "cursor.diffs.useCharacterLevelDiffs": true,
+    "cursor.cmdk.useThemedDiffBackground": true
 }

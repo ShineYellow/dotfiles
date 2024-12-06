@@ -248,5 +248,39 @@
     {
         "key": "cmd+l",
         "command": "-aichat.newchataction"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "composer.startComposerPrompt",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-composer.startComposerPrompt",
+        "when": "composerIsEnabled"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "composer.createNew",
+        "when": "focusedView == 'workbench.panel.composerViewPane2.view'"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-composer.createNew",
+        "when": "focusedView == 'workbench.panel.composerViewPane2.view'"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "composer.createNewChat",
+        "when": "focusedView == 'workbench.panel.aichat.view'"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-composer.createNewChat",
+        "when": "focusedView == 'workbench.panel.aichat.view'"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
     }
 ]
