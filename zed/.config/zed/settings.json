@@ -13,6 +13,7 @@
       "provider": "copilot_chat",
       "model": "claude-3-5-sonnet"
     },
+    "enable_experimental_live_diffs": true ,
     "version": "2"
   },
   "language_models": {
