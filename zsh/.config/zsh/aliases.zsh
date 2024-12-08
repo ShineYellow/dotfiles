@@ -84,7 +84,7 @@ alias trs="tmux rename-session -t $(tmux display-message -p '#S')"
 alias mux="tmuxinator"
 
 alias cat="bat"
-alias tree="exa -T"
+alias tree="eza -T"
 alias ls="exa"
 alias r="ranger"
 
@@ -124,5 +124,3 @@ CYGWIN* | MINGW32* | MSYS* | MINGW*)
 	# echo 'Other OS'
 	;;
 esac
-
-
