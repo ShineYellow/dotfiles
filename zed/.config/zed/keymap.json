@@ -34,8 +34,20 @@
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
       "space t": "workspace::ToggleBottomDock",
+      "ctrl-\\": "workspace::ToggleBottomDock",
       "space f": "file_finder::Toggle",
       "space s": "workspace::Save",
+      "space /": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && vim_operator == none && !VimWaiting",
+    "bindings": {
       "space /": [
         "editor::ToggleComments",
         {
