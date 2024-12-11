@@ -58,3 +58,4 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 
 # GOBIN
 #export PATH="$GOBIN:$PATH"
+[ -f ~/.env ] && { set -a; source ~/.env; set +a; }
