@@ -1,8 +1,8 @@
 
 input_methods = {
-   abc  = { prefix = {"CMD"}, key = "J", message="ABC"},
+   abc  = { prefix = {"ALT"}, key = "J", message="ABC"},
    -- chinese  = { prefix = {"Option"}, key = "K", message="拼音"}
-   sougou  = { prefix = {"CMD"}, key = "K", message="搜狗"}
+   sougou  = { prefix = {"ALT"}, key = "K", message="搜狗"}
 }
 
 
@@ -17,7 +17,7 @@ applications = {
     -- P is reserved for vscode command list
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
     -- osascript -e 'id of app "Application Name"'
-    {prefix = {"Ctrl","SHIFT" ,"ALT"}, key = "Z", message="zotero", bundleId="org.zotero.zotero"},
+    {prefix = {"SHIFT" ,"ALT"}, key = "Z", message="zotero", bundleId="org.zotero.zotero"},
     {prefix = {}, key = "F2", message="things3", bundleId="com.culturedcode.ThingsMac"},
     -- {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
     {prefix = {"CMD"}, key = "-", message="Finder", bundleId="com.apple.finder"},
@@ -33,10 +33,10 @@ applications = {
     {prefix = {"CMD","SHIFT"}, key = "O", message="OpenVPN", bundleId="org.openvpn.client.app"},
     {prefix = {"CMD"}, key = "I", message="Noi", bundleId="com.electron.noi"},
     -- {prefix = {"CMD","SHIFT"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
-    {prefix = {"Ctrl","SHIFT" ,"ALT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
+    {prefix = {"SHIFT" ,"ALT"}, key = "S", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
     {prefix = {"CMD"}, key = ",", message="Chrome", bundleId="com.google.Chrome"},
     {prefix = {"CMD"}, key = ".", message="Zen Browser", bundleId="org.mozilla.com.zen.browser"},
-
+    {prefix = {"ALT"}, key = "P", message="Perplexity", bundleId="ai.perplexity.mac"},
     {prefix = {"ALT"}, key = "C", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
     {prefix = {}, key = "F1", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
     {prefix = {"ALT"}, key = "I", message="iTerm2", bundleId="com.googlecode.iterm2"},
