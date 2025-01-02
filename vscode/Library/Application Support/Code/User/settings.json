@@ -599,5 +599,8 @@
     ],
     "cursor.diffs.useCharacterLevelDiffs": true,
     "cursor.cmdk.useThemedDiffBackground": true,
-    "http.proxy": "socks5://127.0.0.1:7890"
+    "http.proxy": "socks5://127.0.0.1:7890",
+    "makefile.configureOnOpen": false,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.colorTheme": "Dracula Theme"
 }
