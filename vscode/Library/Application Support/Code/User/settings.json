@@ -1,27 +1,10 @@
 {
     "vspacecode.bindingOverrides": [
         {
-            "keys": "g",
-            "name": "lazygit",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "g",
-                    "name": "lazygit",
-                    "type": "command",
-                    "command": "lazygit.openLazygit",
-                    // "args": {
-                    //     "sequence": [
-                    //         {
-                    //             "command": "workbench.action.tasks.runTask",
-                    //             "args": "lazygit"
-                    //         },
-                    //         "workbench.action.terminal.focus",
-                    //         "workbench.action.toggleMaximizedPanel",
-                    //     ]
-                    // }
-                }
-            ]
+            "keys": "g.g",
+            "name": "magit status",
+            "type": "command",
+            "command": "magit.status"
         },
         {
             "keys": "a",
