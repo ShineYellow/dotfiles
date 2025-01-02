@@ -7,6 +7,12 @@
             "command": "magit.status"
         },
         {
+            "keys": "z.z",
+            "name": "toggle zen mode",
+            "type": "command",
+            "command": "workbench.action.toggleZenMode"
+        },
+        {
             "keys": "a",
             "name": "+AI",
             "type": "bindings",
