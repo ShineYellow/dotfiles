@@ -162,6 +162,49 @@
             "type": "command",
             "command": "workbench.action.toggleSidebarVisibility"
         },
+        // {
+        //     "keys": "t.t",
+        //     "name": "run test at cursor",
+        //     "type": "command",
+        //     "command": "go.test.cursor"
+        // },
+        {
+            "keys": "t",
+            "name": "+test",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "t",
+                    "name": "test at cursor",
+                    "type": "command",
+                    "command": "go.test.cursor"
+                },
+                {
+                    "key": "f",
+                    "name": "test file",
+                    "type": "command",
+                    "command": "go.test.file"
+                },
+                {
+                    "key": "l",
+                    "name": "test last",
+                    "type": "command",
+                    "command": "go.test.previous"
+                },
+                {
+                    "key": "d",
+                    "name": "debug test at cursor",
+                    "type": "command",
+                    "command": "go.debug.cursor"
+                },
+                {
+                    "key": "p",
+                    "name": "test package",
+                    "type": "command",
+                    "command": "go.test.package"
+                }
+            ]
+        },
     ],
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
