@@ -41,7 +41,7 @@ function mv(){
 
 
 function main(){
-  if [ "$1"== "p" ];then
+  if [ "$1" == "p" ];then
     mv_pdf
   elif [ "$1" == "t" ];then
     mv_txt
