@@ -33,10 +33,20 @@
     "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
+      // open terminal
       "space t": "workspace::ToggleBottomDock",
       "ctrl-\\": "workspace::ToggleBottomDock",
-      "space f": "file_finder::Toggle",
+      // open file finderr
+      "space f f": "file_finder::Toggle",
       "space s": "workspace::Save",
+      // open ai assistant
+      "space a a": "workspace::ToggleRightDock",
+      "space a k": "assistant::InlineAssist",
+      "space a n": "assistant::NewContext",
+      // "space a a": "assistant::",
+      "space l s": "outline::Toggle",
+      // open recent projects
+      "space p": "projects::OpenRecent",
       "space /": [
         "editor::ToggleComments",
         {
