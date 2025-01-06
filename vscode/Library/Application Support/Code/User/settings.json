@@ -7,6 +7,12 @@
             "command": "magit.status"
         },
         {
+            "keys": "g.l",
+            "name": "lazygit",
+            "type": "command",
+            "command": "lazygit.openLazygit"
+        },
+        {
             "keys": "z.z",
             "name": "toggle zen mode",
             "type": "command",
@@ -33,7 +39,7 @@
                     "key": "c",
                     "name": "close chat",
                     "type": "command",
-                    "command": "aichat.close-sidebar",
+                    "command": "composer.createNew",
                 },
                 {
                     "key": "k",
@@ -46,6 +52,18 @@
                     "name": "cursor composer",
                     "type": "command",
                     "command": "controlPanel.openControlPanel",
+                },
+                {
+                    "key": "n",
+                    "name": "cursor composer",
+                    "type": "command",
+                    "command": "composer.createNew",
+                },
+                {
+                    "key": "m",
+                    "name": "cursor composer",
+                    "type": "command",
+                    "command": "composer.createNewChat",
                 }
             ]
         },
