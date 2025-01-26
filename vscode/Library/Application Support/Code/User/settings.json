@@ -79,13 +79,13 @@
                     "command": "editor.action.formatDocument",
                 },
                 {
-                    "key": "s", 
+                    "key": "s",
                     "name": "show Symbol",
                     "type": "command",
                     "command": "workbench.action.gotoSymbol",
                 },
                 {
-                    "key": "S", 
+                    "key": "S",
                     "name": "show all Symbol",
                     "type": "command",
                     "command": "workbench.action.showAllSymbols",
