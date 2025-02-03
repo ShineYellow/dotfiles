@@ -90,11 +90,17 @@
                     "type": "command",
                     "command": "workbench.action.showAllSymbols",
                 },{
-                    "key": "f", 
+                    "key": "q", 
                     "name": "quick fix",
                     "type": "command",
                     "command": "editor.action.quickFix"
+                },{
+                    "key": "a",
+                    "name": "code action",
+                    "type": "command", 
+                    "command": "editor.action.codeAction"
                 }
+
             ]
         },
         {
