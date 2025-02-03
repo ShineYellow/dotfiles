@@ -89,7 +89,12 @@
                     "name": "show all Symbol",
                     "type": "command",
                     "command": "workbench.action.showAllSymbols",
-                },
+                },{
+                    "key": "f", 
+                    "name": "quick fix",
+                    "type": "command",
+                    "command": "editor.action.quickFix"
+                }
             ]
         },
         {
