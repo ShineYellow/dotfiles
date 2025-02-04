@@ -38,3 +38,24 @@ desc = "Rename bookmark by key"
 on = [ "u", "R" ]
 run = "plugin yamb --args=rename_by_fzf"
 desc = "Rename bookmark by fzf"
+
+############
+[[manager.prepend_keymap]]
+on = [ "m" ]
+run = "plugin bookmarks --args=save"
+desc = "Save current position as a bookmark"
+
+[[manager.prepend_keymap]]
+on = [ "'" ]
+run = "plugin bookmarks --args=jump"
+desc = "Jump to a bookmark"
+
+[[manager.prepend_keymap]]
+on = [ "b", "d" ]
+run = "plugin bookmarks --args=delete"
+desc = "Delete a bookmark"
+
+[[manager.prepend_keymap]]
+on = [ "b", "D" ]
+run = "plugin bookmarks --args=delete_all"
+desc = "Delete all bookmarks"
