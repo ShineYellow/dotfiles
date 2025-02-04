@@ -89,18 +89,25 @@
                     "name": "show all Symbol",
                     "type": "command",
                     "command": "workbench.action.showAllSymbols",
-                },{
-                    "key": "q", 
+                },
+                {
+                    "key": "q",
                     "name": "quick fix",
                     "type": "command",
                     "command": "editor.action.quickFix"
-                },{
+                },
+                {
                     "key": "a",
                     "name": "code action",
-                    "type": "command", 
+                    "type": "command",
                     "command": "editor.action.codeAction"
+                },
+                {
+                    "key": "r",
+                    "name": "rename Symbol",
+                    "type": "command",
+                    "command": "editor.action.rename"
                 }
-
             ]
         },
         {
@@ -723,7 +730,6 @@
     ],
     "cursor.diffs.useCharacterLevelDiffs": true,
     "cursor.cmdk.useThemedDiffBackground": true,
-    "http.proxy": "socks5://127.0.0.1:7890",
     "makefile.configureOnOpen": false,
     "go.toolsManagement.autoUpdate": true,
     "workbench.colorTheme": "Dracula Theme"
