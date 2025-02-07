@@ -47,6 +47,10 @@
       "space l s": "outline::Toggle",
       // open recent projects
       "space p": "projects::OpenRecent",
+      "space g g": [
+            "task::Spawn",
+            { "task_name": "start lazygit", "reveal_target": "center" }
+          ],
       "space /": [
         "editor::ToggleComments",
         {
