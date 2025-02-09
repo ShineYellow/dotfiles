@@ -6,5 +6,15 @@
   {
     "label": "start lazygit",
     "command": "lazygit"
-  }
+  },
+  {
+      "label": "go test - current function",
+      "command": "cd $ZED_DIRNAME; go test -v -run $ZED_SYMBOL",
+      "reveal": "always"
+  }, 
+  {
+        "label": "go test - current package",
+        "command": "cd $ZED_DIRNAME; go test -v",
+        "reveal": "always"
+    }, 
 ]

@@ -43,6 +43,9 @@
       "space a a": "workspace::ToggleRightDock",
       "space a k": "assistant::InlineAssist",
       "space a n": "assistant::NewContext",
+      // 
+      "space t t": ["task::Spawn", { "task_name": "go test - current function" }],
+      "space t p": ["task::Spawn", { "task_name": "go test - current package" }],
       // "space a a": "assistant::",
       "space l s": "outline::Toggle",
       // open recent projects
