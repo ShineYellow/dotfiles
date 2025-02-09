@@ -59,8 +59,4 @@ if command -v bat &> /dev/null; then
   alias catt="bat --theme \"Visual Studio Dark+\"" 
 fi
 
-
-
-
-
-
+eval "$(mise activate zsh)"
