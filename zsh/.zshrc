@@ -48,8 +48,6 @@ else
   HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}/Homebrew"
 fi
 
-source  "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
-source ~/.asdf/plugins/golang/set-env.zsh
 
 # keybinds
 bindkey '^ ' autosuggest-accept
