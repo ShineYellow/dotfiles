@@ -3,6 +3,15 @@ play = [
 	{ run = 'open -a /Applications/nPlayer.app "$@"', orphan = true, for = "unix" },
 ]
 
+edit = [
+	{ run = '/usr/local/bin/cursor "$@"', block = true, for = "unix" },
+]
+
+open = [
+
+	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+]
+
 [open]
 rules = [
 	# Folder
