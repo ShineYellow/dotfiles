@@ -4,12 +4,12 @@ play = [
 ]
 
 edit = [
-	{ run = '/usr/local/bin/cursor "$@"', block = true, for = "unix" },
+	# { run = '/usr/local/bin/cursor "$@"', block = true, for = "unix" },
+	{ run = 'cursor "$@"', block = true, for = "unix" },
 ]
 
 open = [
-
-	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+	{ run = 'nvim "$@"', block = true, for = "unix" },
 ]
 
 [open]
