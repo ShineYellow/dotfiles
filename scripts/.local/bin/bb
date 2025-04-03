@@ -1,0 +1,21 @@
+#!/bin/bash
+
+BREWFILES=(
+    "$HOME/.homebrew/Brewfile.cask"
+    "$HOME/.homebrew/Brewfile.core"
+    "$HOME/.homebrew/Brewfile.language"
+    "$HOME/.homebrew/Brewfile.k8s"
+    "$HOME/.homebrew/Brewfile.vscode"
+    "$HOME/.homebrew/Brewfile.misc"
+)
+OUTPUT_BREWFILE="$HOME/.homebrew/Brewfile"
+
+# Concatenate files with newlines in between
+{
+    for file in "${BREWFILES[@]}"; do
+        cat "$file"
+        printf '\n'
+    done
+} > "$OUTPUT_BREWFILE"
+
+brew bundle --file="$OUTPUT_BREWFILE"

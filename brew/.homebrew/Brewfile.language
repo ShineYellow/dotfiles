@@ -1,0 +1,7 @@
+brew "gobject-introspection"
+brew "google-java-format"
+tap "universal-ctags/universal-ctags"
+brew "universal-ctags"
+brew "maven"
+brew "cmake"
+brew "conan"

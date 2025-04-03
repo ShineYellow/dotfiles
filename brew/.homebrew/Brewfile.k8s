@@ -1,0 +1,7 @@
+brew "k9s"
+brew "kind"
+brew "kubernetes-cli"
+brew "krew"
+brew "kustomize"
+brew "helm"
+brew "minikube"

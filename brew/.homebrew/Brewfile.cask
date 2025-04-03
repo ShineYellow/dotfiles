@@ -1,0 +1,14 @@
+tap "derailed/k9s"
+tap "homebrew/bundle"
+tap "homebrew/cask-versions", "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-versions.git"
+tap "homebrew/command-not-found", "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-command-not-found.git"
+tap "homebrew/services", "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-services.git"
+
+#cask "emacs"
+#cask "kawa"
+#cask "mos"
+#cask "openlens"
+#cask "postman"
+#cask "vagrant"
+
+#brew "derailed/k9s/k9s"
