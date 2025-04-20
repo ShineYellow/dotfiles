@@ -282,5 +282,15 @@
     {
         "key": "shift+cmd+n",
         "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBackInNavigationLocations",
+        "when": "editortextfocus && vim.active && vim.use<c-o> && !indebugrepl"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.navigateForwardInNavigationLocations",
+        "when": "editortextfocus && vim.active && vim.use<c-i> && !indebugrepl"
     }
 ]
