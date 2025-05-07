@@ -29,7 +29,7 @@
     },
     {
         "key": "ctrl+\\",
-        "command": "workbench.action.terminal.toggleTerminal",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "alt+h",
@@ -292,5 +292,9 @@
         "key": "ctrl+i",
         "command": "workbench.action.navigateForwardInNavigationLocations",
         "when": "editortextfocus && vim.active && vim.use<c-i> && !indebugrepl"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
     }
 ]
