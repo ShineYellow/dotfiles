@@ -1,7 +1,7 @@
 # /Users/samhuang/.config/tmuxinator/infra-api.yml
 
 name: infra-api
-root: ~/git/01.controller/infra-api
+root: ~/git/infra-api
 
 # Optional tmux socket
 # socket_name: foo

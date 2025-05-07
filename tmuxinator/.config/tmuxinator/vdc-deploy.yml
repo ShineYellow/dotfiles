@@ -1,7 +1,7 @@
 # /Users/samhuang/.config/tmuxinator/vdc-deploy.yml
 
 name: vdc-deploy
-root: ~/git/03.gitops/vdc-deploy
+root: ~/git/vdc-deploy
 
 # Optional tmux socket
 # socket_name: foo

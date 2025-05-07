@@ -1,7 +1,7 @@
 # /Users/samhuang/.config/tmuxinator/metrics-component.yml
 
 name: metrics-component
-root: ~/git/01.controller/metrics-component
+root: ~/git/metrics-component
 
 # Optional tmux socket
 # socket_name: foo
