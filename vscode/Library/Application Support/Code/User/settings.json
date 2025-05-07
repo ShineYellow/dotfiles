@@ -13,6 +13,13 @@
             "command": "lazygit.openLazygit"
         },
         {
+            "keys": "g.L",
+            "name": "GithubPermalink",
+            "type": "command",
+            "command": "issue.copyGithubPermalink"
+        },
+        
+        {
             "keys": "z.z",
             "name": "toggle zen mode",
             "type": "command",
