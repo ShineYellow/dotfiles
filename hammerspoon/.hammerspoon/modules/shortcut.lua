@@ -2,7 +2,7 @@
 input_methods = {
    abc  = { prefix = {"ALT"}, key = "J", message="ABC"},
    -- chinese  = { prefix = {"Option"}, key = "K", message="拼音"}
-   sougou  = { prefix = {"ALT"}, key = "K", message="搜狗"}
+   chinese  = { prefix = {"ALT"}, key = "K", message="拼音"}
 }
 
 
