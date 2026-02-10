@@ -13,6 +13,6 @@ vim.keymap.set("t", "<Esc><Esc>", [[<C-\><C-n>]], {
 vim.keymap.set("n", "<leader>T1", function()
   Snacks.terminal(nil, { cwd = LazyVim.root(), win = { position = "bottom" } })
 end, { desc = "Terminal 1" })
-vim.keymap.set("n", "<leader>T2", function()
+vim.keymap.set("n", "<leader>T4", function()
   Snacks.terminal("bash", { cwd = LazyVim.root(), win = { position = "bottom" } })
 end, { desc = "Terminal 2" })
