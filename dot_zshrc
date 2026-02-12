@@ -90,3 +90,4 @@ source /Users/samhuang/.config/broot/launcher/bash/br
 alias clauded="claude --dangerously-skip-permissions"
 alias vibe="npx vibe-kanban"
 alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
