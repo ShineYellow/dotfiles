@@ -21,3 +21,4 @@ vim.keymap.set("n", "<leader>ft", function()
     end,
   })
 end, { desc = "Pick terminal buffers" })
+

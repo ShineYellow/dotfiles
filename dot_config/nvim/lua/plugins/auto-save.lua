@@ -1,3 +1,36 @@
+-- some recommended exclusions. you can use `:lua print(vim.bo.filetype)` to
+-- get the filetype string of the current buffer
+local excluded_filetypes = {
+  -- this one is especially useful if you use neovim as a commit message editor
+  "gitcommit",
+  -- most of these are usually set to non-modifiable, which prevents autosaving
+  -- by default, but it doesn't hurt to be extra safe.
+  "NvimTree",
+  "Outline",
+  "TelescopePrompt",
+  "alpha",
+  "dashboard",
+  "lazygit",
+  "neo-tree",
+  "oil",
+  "prompt",
+  "toggleterm",
+}
+
+local excluded_filenames = {
+  "do-not-autosave-me.lua",
+}
+
+local function save_condition(buf)
+  if
+    vim.tbl_contains(excluded_filetypes, vim.fn.getbufvar(buf, "&filetype"))
+    or vim.tbl_contains(excluded_filenames, vim.fn.expand("%:t"))
+  then
+    return false
+  end
+  return true
+end
+
 return {
   "okuuva/auto-save.nvim",
   event = { "InsertLeave", "TextChanged" },
@@ -11,29 +44,7 @@ return {
       immediate_save = { "BufLeave", "FocusLost" },
       defer_save = { "InsertLeave", "TextChanged" },
     },
-    -- function that determines whether to save the current buffer or not
-    -- return true: if buffer is ok to be saved
-    -- return false: if it's not ok to be saved
-    condition = function(buf)
-      local fn = vim.fn
-      local utils = require("auto-save.utils.data")
-      local name = vim.api.nvim_buf_get_name(buf)
-
-      -- 排除 *.dbout
-      if name ~= "" and name:match("%.dbout$") then
-        return false
-      end
-
-      if
-        fn.getbufvar(buf, "&modifiable") == 1
-        and utils.not_in(fn.getbufvar(buf, "&filetype"), { "gitcommit", "markdown", "oil", "TelescopePrompt" })
-      then
-        return true -- met condition(s), can save
-      end
-      return false -- can't save
-    end,
+    condition = save_condition,
     debounce_delay = 1000, -- Wait 1s after typing stops
   },
-
-
 }
