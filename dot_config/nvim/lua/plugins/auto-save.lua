@@ -39,7 +39,7 @@ return {
   },
 
   opts = {
-    enabled = false,
+    enabled = true,
     trigger_events = {
       immediate_save = { "BufLeave", "FocusLost" },
       defer_save = { "InsertLeave", "TextChanged" },
