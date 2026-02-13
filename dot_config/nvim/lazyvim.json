@@ -9,6 +9,7 @@
     "lazyvim.plugins.extras.dap.nlua",
     "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.editor.overseer",
+    "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.helm",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
@@ -18,6 +19,8 @@
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.lsp.none-ls",
     "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.ui.edgy",
+    "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.octo",
     "lazyvim.plugins.extras.util.project"
   ],
