@@ -2,14 +2,6 @@ return {
   "folke/sidekick.nvim",
   event = "VeryLazy",
 
-  -- register which-key bindings
-  -- config = function()
-  --   local wk = require("which-key")
-  --   wk.add({
-  --     { "<leader>k", group = "sidekick" },
-  --   })
-  -- end,
-  --
   keys = function()
     return {
       {
