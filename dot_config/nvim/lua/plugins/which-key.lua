@@ -4,5 +4,10 @@ return {
 
   opts = {
     preset = "modern",
+    spec = {
+      {
+        { "<leader>k", group = "sidekick" },
+      },
+    },
   },
 }
