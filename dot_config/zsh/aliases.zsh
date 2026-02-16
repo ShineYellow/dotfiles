@@ -77,10 +77,10 @@ alias vi="nvim"
 
 alias t="tmux"
 alias tn="tmux new-session"
-# alias tk="tmux kill-session"
+alias tk="tmux kill-session"
 # alias ta="tmux attach"
 # alias tr="tmux rename-session"
-alias trs="tmux rename-session -t $(tmux display-message -p '#S')"
+# alias trs="tmux rename-session -t $(tmux display-message -p '#S')"
 alias mux="tmuxinator"
 
 alias cat="bat"
@@ -88,11 +88,6 @@ alias tree="eza -T"
 alias ls="exa"
 alias r="ranger"
 
-
-alias tpr="tkn pipelinerun"
-alias ttp="tkn pipeline"
-alias ttt="tkn task"
-alias ttr="tkn taskrun"
 
 alias pn="pnpm"
 
@@ -103,7 +98,6 @@ alias ca="cursor-agent"
 
 alias cl='http_proxy="http://localhost:7890" claude'
 alias ccc='npx copilot-api@latest start --claude-code'
-alias duck='export ANTHROPIC_AUTH_TOKEN="sk-tce6TrAcShFoQVj19rvynXvacWPANq9sa7bupt9yRgJFZm0d";export ANTHROPIC_BASE_URL="https://jp.instcopilot-api.com"'
 
 alias proxy='export https_proxy="http://localhost:7890";export http_proxy="http://localhost:7890";echo -e "Proxy on"'
 
@@ -112,10 +106,20 @@ alias jira='jiratui ui --assignee-account-id 712020:faf89636-b70f-4485-9e9d-fe23
 alias tg='terragrunt'
 alias tf='tofu'
 
+
+alias clauded="claude --dangerously-skip-permissions"
+alias vibe="npx vibe-kanban"
+alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
+
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi
 
+
+if command -v bat &> /dev/null; then
+  alias cat="bat -pp --theme \"Visual Studio Dark+\""
+  alias catt="bat --theme \"Visual Studio Dark+\""
+fi
 
 
 case "$(uname -s)" in

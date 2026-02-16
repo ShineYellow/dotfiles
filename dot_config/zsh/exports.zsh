@@ -16,7 +16,6 @@ export GOBIN=$GOPATH/bin
 export PATH=$HOME/.fnm:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export XDG_CURRENT_DESKTOP="Wayland"
-export PATH="$HOME/.config/emacs/bin:$PATH"
 #export PATH="$PATH:./node_modules/.bin"
 # eval "$(fnm env)"
 eval "$(zoxide init zsh)"
@@ -56,6 +55,20 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 # MAVEN
 #export MAVEN_HOME="/opt/apache-maven-3.8.6"
 #export PATH="$MAVEN_HOME/bin:$PATH"
+#
+# bun completions
+[ -s "/Users/samhuang/.bun/_bun" ] && source "/Users/samhuang/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# opencode
+export PATH=/Users/samhuang/.opencode/bin:$PATH
+# export GOOGLE_CLOUD_PROJECT="gen-lang-client-0549631171"
+
+# Homebrew auto update is slow, so disable it
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # GOBIN
 #export PATH="$GOBIN:$PATH"

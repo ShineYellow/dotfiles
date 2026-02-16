@@ -6,11 +6,12 @@
 HISTFILE=~/.zsh_history
 
 # source
-plug "$HOME/.config/zsh/kube.zsh"
-plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 plug "$HOME/.config/zsh/cli.zsh"
 plug "$HOME/.config/zsh/function.zsh"
+plug "$HOME/.config/zsh/eval.zsh"
+plug "$HOME/.config/zsh/kube.zsh"
+plug "$HOME/.config/zsh/aliases.zsh"
 
 # plugins
 plug "esc/conda-zsh-completion"
@@ -53,41 +54,17 @@ fi
 # keybinds
 bindkey '^ ' autosuggest-accept
 
-if command -v bat &> /dev/null; then
-  alias cat="bat -pp --theme \"Visual Studio Dark+\""
-  alias catt="bat --theme \"Visual Studio Dark+\""
-fi
 
-eval "$(/Users/samhuang/.local/bin/mise activate zsh)"
 
 [ -f "/Users/samhuang/.ghcup/env" ] && . "/Users/samhuang/.ghcup/env" # ghcup-env
 
-export HOMEBREW_NO_AUTO_UPDATE=1
 
-export PATH="$HOME/.local/bin:$PATH"
-
-# bun completions
-[ -s "/Users/samhuang/.bun/_bun" ] && source "/Users/samhuang/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# opencode
-export PATH=/Users/samhuang/.opencode/bin:$PATH
-# export GOOGLE_CLOUD_PROJECT="gen-lang-client-0549631171"
 
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
-. "$HOME/.atuin/bin/env"
-
-# eval "$(atuin init zsh)"
-eval "$(atuin init zsh --disable-up-arrow)"
 
 
 source /Users/samhuang/.config/broot/launcher/bash/br
 
-alias clauded="claude --dangerously-skip-permissions"
-alias vibe="npx vibe-kanban"
-alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
