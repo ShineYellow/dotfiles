@@ -4,6 +4,7 @@ return {
 
   keys = function()
     return {
+      { "<tab>", LazyVim.cmp.map({ "ai_nes" }, "<tab>"), mode = { "n" }, expr = true },
       {
         "<leader>kk",
         function()
