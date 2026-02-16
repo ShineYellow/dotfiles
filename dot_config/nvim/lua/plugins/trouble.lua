@@ -3,7 +3,7 @@ return {
   opts = {
     modes = {
       symbols = {
-        win = { position = "left" },
+        win = { position = "right" },
       },
     },
   },
