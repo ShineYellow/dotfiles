@@ -4,22 +4,26 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR="nvim"
-export TERMINAL="kitty"
-export BROWSER="brave"
-export PATH="$HOME/.local/bin":$PATH
+# export TERMINAL="kitty"
+# export BROWSER="brave"
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
+export PATH="$HOME/.local/bin":$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
-export GOPATH=$HOME/.local/share/go
-export GOBIN=$GOPATH/bin
 export PATH=$HOME/.fnm:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
+export GOPATH=$HOME/.local/share/go
+export GOBIN=$GOPATH/bin
 export XDG_CURRENT_DESKTOP="Wayland"
+# kubectl krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+# opencode
+export PATH=/Users/samhuang/.opencode/bin:$PATH
 #export PATH="$PATH:./node_modules/.bin"
-# eval "$(fnm env)"
-eval "$(zoxide init zsh)"
-# eval "`pip completion --zsh`"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 
 # >>> conda initialize >>>
@@ -41,8 +45,6 @@ unset __conda_setup
 
 
 
-# kubectl krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # JAVA
 #export JAVA_HOME="/usr/local/opt/openjdk@11"
@@ -55,16 +57,12 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 # MAVEN
 #export MAVEN_HOME="/opt/apache-maven-3.8.6"
 #export PATH="$MAVEN_HOME/bin:$PATH"
-#
+
+
 # bun completions
 [ -s "/Users/samhuang/.bun/_bun" ] && source "/Users/samhuang/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
-# opencode
-export PATH=/Users/samhuang/.opencode/bin:$PATH
 # export GOOGLE_CLOUD_PROJECT="gen-lang-client-0549631171"
 
 # Homebrew auto update is slow, so disable it

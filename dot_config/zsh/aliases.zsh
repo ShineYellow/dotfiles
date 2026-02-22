@@ -111,6 +111,9 @@ alias clauded="claude --dangerously-skip-permissions"
 alias vibe="npx vibe-kanban"
 alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
 
+
+alias uat-db='KUBECONFIG=/Users/samhuang/.kube/ali-vdc-uat kubectl port-forward pod/infra-db-mysql-0 -n mysql 3306:3306'
+
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi

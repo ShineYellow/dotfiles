@@ -5,4 +5,17 @@ uat_huawei_env() {
   export HUAWEICLOUD_SDK_SK=h3ibLwRz4TOUupm5pF7jHS2PEGT4VdulvfhOxfnv
 }
 
-alias uat-db='KUBECONFIG=/Users/samhuang/.kube/ali-vdc-uat kubectl port-forward pod/infra-db-mysql-0 -n mysql 3306:3306'
+
+function tt(){
+   tmux attach -t $(tmux list-sessions -F '#{session_name}' | fzf)
+}
+
+function merge_kubeconfig() {
+    export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f -not -name 'kubectx' | tr '\n' ':')
+    cp ~/.kube/config /tmp/config-backup
+    kubectl config view --flatten > /tmp/all-in-one-kubeconfig.yaml
+    mv /tmp/all-in-one-kubeconfig.yaml ~/.kube/config
+    kubectl config get-clusters
+    unset KUBECONFIG
+}
+

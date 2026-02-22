@@ -10,7 +10,6 @@ plug "$HOME/.config/zsh/exports.zsh"
 plug "$HOME/.config/zsh/cli.zsh"
 plug "$HOME/.config/zsh/function.zsh"
 plug "$HOME/.config/zsh/eval.zsh"
-plug "$HOME/.config/zsh/kube.zsh"
 plug "$HOME/.config/zsh/aliases.zsh"
 
 # plugins

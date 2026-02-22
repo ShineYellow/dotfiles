@@ -6,3 +6,6 @@ eval "$(direnv hook zsh)"
 # eval "$(atuin init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
 
+# eval "$(fnm env)"
+eval "$(zoxide init zsh)"
+# eval "`pip completion --zsh`"
