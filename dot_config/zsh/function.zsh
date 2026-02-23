@@ -19,3 +19,17 @@ function merge_kubeconfig() {
     unset KUBECONFIG
 }
 
+
+# rsrg search rust library via keyword, e.g.:
+# rsrg "HashMap"
+# rsrg "impl<T> FromIterator"
+function rsrg() {
+  local SYSROOT
+  SYSROOT="$(rustc --print sysroot)"
+  rg "$@" "$SYSROOT/lib/rustlib/src/rust/library/"
+}
+
+# rsdoc open rust std library doc in browser
+function rsdoc() {
+  rustup doc --std
+}
