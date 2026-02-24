@@ -1,6 +1,7 @@
 return {
   {
     "kristijanhusak/vim-dadbod-ui",
+    ft = { "sql", "mysql", "plsql" },
     dependencies = {
       { "tpope/vim-dadbod", lazy = true },
       {
@@ -20,6 +21,10 @@ return {
       -- Your DBUI configuration
       vim.g.db_ui_use_nerd_fonts = 1
     end,
+    keys = {
+      -- disable the keymap to grep files
+      { "<localleader>e", "<Plug>(DBUI_ExecuteQuery)", desc = "Query Sql", mode = { "n", "v" }, buffer = true },
+    },
   },
   { -- optional saghen/blink.cmp completion source
     "saghen/blink.cmp",

@@ -17,6 +17,13 @@ local excluded_filetypes = {
   "oil",
   "prompt",
   "toggleterm",
+  "mysql",
+  "redis",
+  "postgresql",
+  "dbui",
+  "dbout",
+  "mongodb",
+  "sqlite",
 }
 
 local excluded_filenames = {

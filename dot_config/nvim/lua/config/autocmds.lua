@@ -42,3 +42,19 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.diagnostic.enable(false)
   end,
 })
+
+-- exmaple of cloalleader keybindings
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "rust",
+  callback = function()
+    local wk = require("which-key")
+
+    wk.add({
+      { "<localleader>r", group = "Rust", buffer = true },
+
+      { "<localleader>rr", "<cmd>RustRun<cr>", desc = "Run", buffer = true },
+      { "<localleader>rt", "<cmd>RustTest<cr>", desc = "Test", buffer = true },
+      { "<localleader>rc", "<cmd>RustClippy<cr>", desc = "Clippy", buffer = true },
+    })
+  end,
+})

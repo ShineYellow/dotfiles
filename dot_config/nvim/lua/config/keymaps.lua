@@ -22,3 +22,19 @@ vim.keymap.set("n", "<leader>ft", function()
   })
 end, { desc = "Pick terminal buffers" })
 
+-- In terminal or Snacks terminal buffer: "n" opens a new Snacks terminal
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    local buftype = vim.bo.buftype
+    local filetype = vim.bo.filetype
+    if buftype == "terminal" or filetype == "snacks_terminal" then
+      local open_new = function()
+        Snacks.terminal.open()
+      end
+      vim.keymap.set("n", "o", open_new, { buffer = true, desc = "Open new Snacks terminal" })
+      vim.keymap.set("t", "o", open_new, { buffer = true, desc = "Open new Snacks terminal" })
+      vim.keymap.set("n", "q", "<cmd>q<cr>", { buffer = true, desc = "Close terminal" })
+      vim.keymap.set("t", "q", "<cmd>q<cr>", { buffer = true, desc = "Close terminal" })
+    end
+  end,
+})
