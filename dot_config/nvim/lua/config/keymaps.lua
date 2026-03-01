@@ -32,9 +32,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
         Snacks.terminal.open()
       end
       vim.keymap.set("n", "o", open_new, { buffer = true, desc = "Open new Snacks terminal" })
-      vim.keymap.set("t", "o", open_new, { buffer = true, desc = "Open new Snacks terminal" })
       vim.keymap.set("n", "q", "<cmd>q<cr>", { buffer = true, desc = "Close terminal" })
-      vim.keymap.set("t", "q", "<cmd>q<cr>", { buffer = true, desc = "Close terminal" })
     end
   end,
 })

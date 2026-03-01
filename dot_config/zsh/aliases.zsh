@@ -93,7 +93,6 @@ alias pn="pnpm"
 
 alias c="cursor"
 
-alias y="yazi"
 alias ca="cursor-agent"
 
 alias cl='http_proxy="http://localhost:7890" claude'
@@ -108,11 +107,15 @@ alias tf='tofu'
 
 
 alias clauded="claude --dangerously-skip-permissions"
+alias geminid="gemini --approval-mode yolo"
+
 alias vibe="npx vibe-kanban"
 alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
 
 
 alias uat-db='KUBECONFIG=/Users/samhuang/.kube/ali-vdc-uat kubectl port-forward pod/infra-db-mysql-0 -n mysql 3306:3306'
+
+alias upgrade-at="brew upgrade --cask --no-quarantine antigravity-tools"
 
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"

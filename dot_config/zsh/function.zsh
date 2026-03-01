@@ -1,3 +1,10 @@
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 uat_huawei_env() {
   export DSN="root:zillizinfra@tcp(127.0.0.1:3306)/infra?charset=utf8mb4&parseTime=True&loc=UTC" 
