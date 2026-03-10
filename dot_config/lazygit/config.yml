@@ -1,0 +1,6 @@
+git:
+  overrideGpg: true
+  commit:
+    signOff: true
+  pagers:
+    - pager: delta --paging=never --hunk-header-style=omit
