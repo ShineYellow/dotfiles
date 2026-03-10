@@ -5,6 +5,10 @@ alias f='zi'
 alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
+alias n='nvim'
+alias zshrc='nvim ~/.config/zsh/'
+alias hsrc='nvim ~/.hammerspoon/'
+
 alias yay="paru"
 # alias lvim="env TERM=wezterm lvim"
 

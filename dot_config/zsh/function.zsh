@@ -6,6 +6,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+function nn() {
+   nvim "$(find /Users/samhuang/git -maxdepth 1 -mindepth 1 -type d | fzf)"
+}
+
 uat_huawei_env() {
   export DSN="root:zillizinfra@tcp(127.0.0.1:3306)/infra?charset=utf8mb4&parseTime=True&loc=UTC" 
   export HUAWEICLOUD_SDK_AK=HPUAAGJNEJ4WD7IKQAWC
@@ -40,3 +44,16 @@ function rsrg() {
 function rsdoc() {
   rustup doc --std
 }
+
+
+# 定义 iTerm2 用户变量函数
+function iterm2_print_user_vars() {
+  # 设置一个名为 k8s_config 的 iTerm2 变量
+  # 如果 KUBECONFIG 为空，则显示 "Default"
+  iterm2_set_user_var k8s_config $(basename "${KUBECONFIG:-Default}")
+  
+  # 进阶版：如果你想显示当前的 Context 名字（更直观）
+  # iterm2_set_user_var k8s_ctx $(kubectl config current-context 2>/dev/null || echo "N/A")
+}
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

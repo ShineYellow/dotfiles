@@ -67,3 +67,7 @@ source /Users/samhuang/.config/broot/launcher/bash/br
 
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
+
+
+# Added by Antigravity
+export PATH="/Users/samhuang/.antigravity/antigravity/bin:$PATH"

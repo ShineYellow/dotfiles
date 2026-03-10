@@ -12,11 +12,20 @@ return {
   keys = function()
     local keys = {
       {
-        "<leader>H",
+        "H",
         function()
+          vim.notify("harpoon!!!", vim.log.levels.INFO)
           require("harpoon"):list():add()
         end,
-        desc = "Harpoon File",
+        desc = "Harpoon it",
+      },
+      {
+        "<leader>H",
+        function()
+          vim.notify("harpoon!!!", vim.log.levels.INFO)
+          require("harpoon"):list():add()
+        end,
+        desc = "Harpoon it",
       },
       {
         "<leader>h",
