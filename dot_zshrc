@@ -71,3 +71,23 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/samhuang/.antigravity/antigravity/bin:$PATH"
+
+# opencli completion
+fpath=(/Users/samhuang/.zsh/completions $fpath)
+autoload -Uz compinit && compinit
+
+alias claude-mem='bun "/Users/samhuang/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+# bun completions
+[ -s "/Users/samhuang/.bun/_bun" ] && source "/Users/samhuang/.bun/_bun"
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
+
+
+
+
+
+export OPENAI_API_KEY="usr_pool_0065_54d71a0f603a"
+
+_gtr_init="${XDG_CACHE_HOME:-$HOME/.cache}/gtr/init-gtr.zsh"
+[[ -f "$_gtr_init" ]] || eval "$(git gtr init zsh)" || true
+source "$_gtr_init" 2>/dev/null || true; unset _gtr_init
