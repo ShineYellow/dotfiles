@@ -3,6 +3,7 @@
 local excluded_filetypes = {
   -- this one is especially useful if you use neovim as a commit message editor
   "gitcommit",
+  "harpoon",
   "noice",
   "notify",
   "lazy",

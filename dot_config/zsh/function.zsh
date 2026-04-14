@@ -62,6 +62,6 @@ function gcd {
   gtr cd "$(git gtr list --porcelain | awk '{print $2}' | fzf)" ; zellij --layout ai
 }
 
-function ggcd {
+function ggf {
   gtr cd "$(git gtr list --porcelain | awk '{print $2}' | fzf)" ; zellij --layout ai
 }
