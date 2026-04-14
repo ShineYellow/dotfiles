@@ -36,3 +36,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end
   end,
 })
+
+-- 复制粘贴快捷键
+vim.keymap.set("v", "<D-c>", '"+y') -- GUI用
+vim.keymap.set("n", "<D-v>", '"+p')
