@@ -57,3 +57,11 @@ function iterm2_print_user_vars() {
 }
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+function gcd {
+  gtr cd "$(git gtr list --porcelain | awk '{print $2}' | fzf)" ; zellij --layout ai
+}
+
+function ggcd {
+  gtr cd "$(git gtr list --porcelain | awk '{print $2}' | fzf)" ; zellij --layout ai
+}
