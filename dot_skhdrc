@@ -1,0 +1,118 @@
+# ~/.skhdrc — skhd + yabai mode configuration
+# Reload after edits: skhd --restart-service
+#
+# Modes:
+#   alt - w  → window mode    (hjkl focus, shift swap, cmd warp, f/t/e)
+#   alt - r  → resize mode    (hjkl shrink, shift-hjkl grow, e balance, r rotate)
+#   escape   → back to default from any mode
+#
+# Direct (no-mode) shortcuts:
+#   alt - 1..9        → jump to that space
+#   alt - h / alt - l → prev / next space
+#   alt - shift - N   → send window to space N
+#   alt - c / alt - x → create / destroy space
+
+# ============================================================================
+# Mode declarations
+# `spaces` (not `space`) because `space` is a reserved key name in skhd.
+# `@` = capture — unbound keys in the mode are swallowed instead of passed through.
+# ============================================================================
+
+:: default    : borders active_color=0xff555555 width=6.0
+:: window  @  : borders active_color=0xff00ff00 width=6.0
+:: resize  @  : borders active_color=0xffff3300 width=6.0
+
+# ============================================================================
+# Mode entry / exit
+# ============================================================================
+
+default < alt - w ; window
+default < alt - r ; resize
+
+window, resize < escape ; default
+
+# ============================================================================
+# Direct space jumps (always available in default mode)
+# ============================================================================
+
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+alt - 7 : yabai -m space --focus 7
+alt - 8 : yabai -m space --focus 8
+alt - 9 : yabai -m space --focus 9
+alt - return: yabai -m window --toggle zoom-fullscreen
+
+# ============================================================================
+# window mode — focus, swap, warp, fullscreen, float, balance
+# ============================================================================
+
+window < h : yabai -m window --focus west
+window < j : yabai -m window --focus south
+window < k : yabai -m window --focus north
+window < l : yabai -m window --focus east
+
+window < shift - h : yabai -m window --swap west
+window < shift - j : yabai -m window --swap south
+window < shift - k : yabai -m window --swap north
+window < shift - l : yabai -m window --swap east
+
+window < cmd - h : yabai -m window --warp west
+window < cmd - j : yabai -m window --warp south
+window < cmd - k : yabai -m window --warp north
+window < cmd - l : yabai -m window --warp east
+
+window < f : yabai -m window --toggle zoom-fullscreen
+window < t : yabai -m window --toggle float
+window < e : yabai -m space --balance
+
+# ============================================================================
+# Space navigation — global (no mode)
+# ============================================================================
+
+alt - h : yabai -m space --focus prev
+alt - l : yabai -m space --focus next
+alt - left  : yabai -m space --focus prev
+alt - right : yabai -m space --focus next
+
+shift + alt - h : yabai -m window --space prev; yabai -m space --focus prev
+shift + alt - l : yabai -m window --space next; yabai -m space --focus next
+
+shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
+shift + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
+shift + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
+shift + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
+shift + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
+shift + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
+shift + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
+shift + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
+shift + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
+
+# create/destroy don't trigger a space animation, so they stay sticky
+alt - c : yabai -m space --create
+alt - x : yabai -m space --destroy
+
+# ============================================================================
+# resize mode — grow/shrink edges, balance, rotate
+# ============================================================================
+
+resize < h : yabai -m window --resize left:-40:0  || yabai -m window --resize right:-40:0
+resize < l : yabai -m window --resize right:40:0  || yabai -m window --resize left:40:0
+resize < j : yabai -m window --resize bottom:0:40 || yabai -m window --resize top:0:40
+resize < k : yabai -m window --resize top:0:-40   || yabai -m window --resize bottom:0:-40
+
+resize < shift - h : yabai -m window --resize left:-80:0  || yabai -m window --resize right:-80:0
+resize < shift - l : yabai -m window --resize right:80:0  || yabai -m window --resize left:80:0
+resize < shift - j : yabai -m window --resize bottom:0:80 || yabai -m window --resize top:0:80
+resize < shift - k : yabai -m window --resize top:0:-80   || yabai -m window --resize bottom:0:-80
+
+resize < e : yabai -m space --balance
+resize < r : yabai -m space --rotate 90
+
+# disable macos system hide
+cmd - h : true
+# cmd - j : true
+# cmd - k : true
