@@ -7,3 +7,4 @@ vim.g.db_ui_disable_mappings_sql = 1
 -- the following line to the file to always use the current working directory (cwd)
 -- as the root:
 --vim.g.root_spec = { "cwd" }
+--
