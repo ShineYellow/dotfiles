@@ -25,7 +25,7 @@ applications = {
 	-- { prefix = { "Ctrl", "SHIFT", "ALT" }, key = "N", message = "next-chat", bundleId = "com.yida.chatgpt.next.web" },
 	-- { prefix = { "CMD", "Ctrl" }, key = "N", message = "notion", bundleId = "notion.id" },
 	{ prefix = { "CMD" }, key = "L", message = "Lark", bundleId = "com.larksuite.larkApp" },
-	{ prefix = { "CMD", "SHIFT" }, key = "L", message = "slack", bundleId = "com.tinyspeck.slackmacgap" },
+	-- { prefix = { "CMD", "SHIFT" }, key = "L", message = "slack", bundleId = "com.tinyspeck.slackmacgap" },
 	-- {prefix = {"CMD"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
 	{ prefix = { "CMD" }, key = "M", message = "email", bundleId = "com.apple.mail" },
 	{ prefix = { "CMD" }, key = "O", message = "openlens", bundleId = "com.electron.open-lens" },
@@ -39,8 +39,9 @@ applications = {
 	{ prefix = { "SHIFT", "ALT" }, key = "S", message = "SnapNDrag Pro", bundleId = "com.yellowmug.SnapNDrag" },
 	{ prefix = { "CMD" }, key = ",", message = "Chrome", bundleId = "com.google.Chrome" },
 	{ prefix = { "CMD" }, key = ".", message = "Zen Browser", bundleId = "app.zen-browser.zen" },
-	{ prefix = { "ALT", "SHIFT" }, key = "I", message = "iTerm2", bundleId = "com.googlecode.iterm2" },
-	{ prefix = { "CMD", "SHIFT" }, key = "I", message = "iTerm2", bundleId = "com.googlecode.iterm2" },
+	{ prefix = { "Ctrl", "ALT", "SHIFT" }, key = "I", message = "iTerm2", bundleId = "com.googlecode.iterm2" },
+	{ prefix = { "ALT", "SHIFT" }, key = "I", message = "iTerm2", bundleId = "com.cmuxterm.app" },
+	{ prefix = { "CMD", "SHIFT" }, key = "I", message = "iTerm2", bundleId = "com.cmuxterm.app" },
 	{ prefix = { "ALT" }, key = "I", message = "Ghostty", bundleId = "com.mitchellh.ghostty" },
 	{ prefix = { "CMD" }, key = "I", message = "Ghostty", bundleId = "com.mitchellh.ghostty" },
 	-- {prefix = {"ALT","SHIFT"}, key = "I", message="Ghostty", bundleId="com.mitchellh.ghostty"},
@@ -60,9 +61,9 @@ applications = {
 	{ prefix = { "ALT" }, key = "V", message = "VSCode", bundleId = "com.microsoft.VSCode" },
 	{ prefix = { "ALT" }, key = "Z", message = "Zed", bundleId = "dev.zed.Zed" },
 	{ prefix = { "ALT" }, key = "S", message = "Sublime", bundleId = "com.sublimetext.4" },
-	{ prefix = { "CMD" }, key = "1", message = "neovide", bundleId = "com.neovide.neovide" },
+	-- { prefix = { "CMD" }, key = "1", message = "neovide", bundleId = "com.neovide.neovide" },
 	{ prefix = { "ALT" }, key = "N", message = "neovide", bundleId = "com.neovide.neovide" },
-	{ prefix = {}, key = "F1", message = "neovide", bundleId = "com.neovide.neovide" },
+	-- { prefix = {}, key = "F1", message = "neovide", bundleId = "com.neovide.neovide" },
 	{ prefix = { "ALT", "SHIFT" }, key = "C", message = "Cursor", bundleId = "com.todesktop.230313mzl4w4u92" },
 	-- {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
 	-- {prefix = {"CMD"}, key = "2", message="Cursor", bundleId="com.todesktop.230313mzl4w4u92"},
@@ -124,11 +125,11 @@ windows = {
 	-- 中 1/3
 	middle = { prefix = { "Ctrl", "Option" }, key = "F", message = "Middle 1/3" },
 	-- 右 1/3（横屏）或下 1/3（竖屏）
-	right_1_3 = {
-		prefix = { "Ctrl", "Option" },
-		key = "G",
-		message = "Right 1/3(Horizontal screen)Or Bottom 1/3(Vertical screen)",
-	},
+	-- right_1_3 = {
+	-- 	prefix = { "Ctrl", "Option" },
+	-- 	key = "G",
+	-- 	message = "Right 1/3(Horizontal screen)Or Bottom 1/3(Vertical screen)",
+	-- },
 	-- 左 2/3（横屏）或上 2/3（竖屏）
 	left_2_3 = {
 		prefix = { "Ctrl", "Option" },
