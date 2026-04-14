@@ -109,6 +109,11 @@ alias jira='jiratui ui --assignee-account-id 712020:faf89636-b70f-4485-9e9d-fe23
 alias tg='terragrunt'
 alias tf='tofu'
 
+alias zai='zellij --layout ai'
+alias za='zellij attach'
+alias ggn='git gtr new'
+alias ggl='git gtr list'
+
 
 alias clauded="claude --dangerously-skip-permissions"
 alias geminid="gemini --approval-mode yolo"
@@ -120,6 +125,8 @@ alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:78
 alias uat-db='KUBECONFIG=/Users/samhuang/.kube/ali-vdc-uat kubectl port-forward pod/infra-db-mysql-0 -n mysql 3306:3306'
 
 alias upgrade-at="brew upgrade --cask --no-quarantine antigravity-tools"
+
+alias zjs='zellij attach "$(zellij list-sessions -s | fzf)"'
 
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
