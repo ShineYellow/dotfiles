@@ -83,11 +83,6 @@ alias claude-mem='bun "/Users/samhuang/.claude/plugins/marketplaces/thedotmack/p
 export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
 
-
-
-
-export OPENAI_API_KEY="usr_pool_0065_54d71a0f603a"
-
 _gtr_init="${XDG_CACHE_HOME:-$HOME/.cache}/gtr/init-gtr.zsh"
 [[ -f "$_gtr_init" ]] || eval "$(git gtr init zsh)" || true
 source "$_gtr_init" 2>/dev/null || true; unset _gtr_init

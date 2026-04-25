@@ -69,6 +69,15 @@ window < f : yabai -m window --toggle zoom-fullscreen
 window < t : yabai -m window --toggle float
 window < e : yabai -m space --balance
 
+window < 1 : yabai -m window --space 1; yabai -m space --focus 1
+window < 2 : yabai -m window --space 2; yabai -m space --focus 2
+window < 3 : yabai -m window --space 3; yabai -m space --focus 3
+window < 4 : yabai -m window --space 4; yabai -m space --focus 4
+window < 5 : yabai -m window --space 5; yabai -m space --focus 5
+window < 6 : yabai -m window --space 6; yabai -m space --focus 6
+window < 7 : yabai -m window --space 7; yabai -m space --focus 7
+window < 8 : yabai -m window --space 8; yabai -m space --focus 8
+window < 9 : yabai -m window --space 9; yabai -m space --focus 9
 # ============================================================================
 # Space navigation — global (no mode)
 # ============================================================================
@@ -113,6 +122,6 @@ resize < e : yabai -m space --balance
 resize < r : yabai -m space --rotate 90
 
 # disable macos system hide
-cmd - h : true
+# cmd - h : true
 # cmd - j : true
 # cmd - k : true

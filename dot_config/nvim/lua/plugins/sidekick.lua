@@ -2,25 +2,34 @@ return {
   "folke/sidekick.nvim",
   event = "VeryLazy",
 
+  opts = {
+    cli = {
+      mux = {
+        enabled = false,
+        backend = "zellij",
+      },
+    },
+  },
+
   keys = function()
     return {
       { "<tab>", LazyVim.cmp.map({ "ai_nes" }, "<tab>"), mode = { "n" }, expr = true },
       {
-        "<leader>kk",
+        "<leader>aa",
         function()
           require("sidekick.cli").toggle()
         end,
         desc = "Sidekick Toggle CLI",
       },
       {
-        "<leader>kc",
+        "<leader>ac",
         function()
           require("sidekick.cli").close()
         end,
         desc = "Detach a CLI Session",
       },
       {
-        "<leader>ks",
+        "<leader>as",
         function()
           require("sidekick.cli").send({ msg = "{this}" })
         end,
@@ -28,14 +37,14 @@ return {
         desc = "Send This",
       },
       {
-        "<leader>kf",
+        "<leader>af",
         function()
           require("sidekick.cli").send({ msg = "{file}" })
         end,
         desc = "Send File",
       },
       {
-        "<leader>kv",
+        "<leader>av",
         function()
           require("sidekick.cli").send({ msg = "{selection}" })
         end,
@@ -43,7 +52,7 @@ return {
         desc = "Send Visual Selection",
       },
       {
-        "<leader>kp",
+        "<leader>ap",
         function()
           require("sidekick.cli").prompt()
         end,

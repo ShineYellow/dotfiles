@@ -25,6 +25,7 @@ local excluded_filetypes = {
   "dbout",
   "mongodb",
   "sqlite",
+  "http",
 }
 
 local excluded_filenames = {

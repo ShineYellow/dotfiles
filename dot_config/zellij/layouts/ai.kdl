@@ -12,12 +12,12 @@ layout {
         pane split_direction="vertical" {
             pane size="33%" {
               command "claude"
-              cwd "--dangerously-skip-permissions"
+              args "--dangerously-skip-permissions"
             }
             pane size="67%" split_direction="horizontal" {
-                pane {
+                pane focus=true {
                   command "nvim"
-                  cwd "."
+                  args "."
                 }
                 pane
             }

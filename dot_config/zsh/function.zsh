@@ -65,3 +65,20 @@ function gcd {
 function ggf {
   gtr cd "$(git gtr list --porcelain | awk '{print $2}' | fzf)" ; zellij --layout ai
 }
+
+function uninstall-gsd {
+  npx get-shit-done-cc --claude --global --uninstall
+  npx get-shit-done-cc --opencode --global --uninstall
+  npx get-shit-done-cc --gemini --global --uninstall
+  npx get-shit-done-cc --kilo --global --uninstall
+  npx get-shit-done-cc --codex --global --uninstall
+  npx get-shit-done-cc --copilot --global --uninstall
+  npx get-shit-done-cc --cursor --global --uninstall
+  npx get-shit-done-cc --windsurf --global --uninstall
+  npx get-shit-done-cc --antigravity --global --uninstall
+  npx get-shit-done-cc --augment --global --uninstall
+  npx get-shit-done-cc --trae --global --uninstall
+  npx get-shit-done-cc --qwen --global --uninstall
+  npx get-shit-done-cc --codebuddy --global --uninstall
+  npx get-shit-done-cc --cline --global --uninstall
+}

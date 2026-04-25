@@ -130,8 +130,12 @@ alias upgrade-at="brew upgrade --cask --no-quarantine antigravity-tools"
 
 alias zai='zellij --layout ai'
 alias zellijrc='nvim ~/.config/zellij'
-alias zf='zellij attach "$(zellij list-sessions -s | fzf)"'
+alias za='zellij attach "$(zellij list-sessions -s | fzf)"'
+alias zk='zellij kill-session "$(zellij list-sessions -s | fzf)"'
+alias zd='zellij delete-session "$(zellij list-sessions -s | fzf)" --force'
 alias zl='zellij list-sessions'
+
+alias gsd='npx get-shit-done-cc@latest'
 
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"

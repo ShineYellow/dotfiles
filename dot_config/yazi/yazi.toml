@@ -1,3 +1,4 @@
+
 [opener]
 play = [
 	{ run = 'open -a /Applications/nPlayer.app %s', orphan = true, for = "unix" },
