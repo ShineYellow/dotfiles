@@ -1,0 +1,152 @@
+data_dir = ""
+attachment_send = ""
+language = "en"
+
+[[providers]]
+  name = "zilliz"
+  api_key = "usr_pool_0169_6f3dc6cc194a"
+  base_url = "https://token.zasdas.com/v1"
+  model = "gpt-5.5"
+  agent_types = ["codex", "opencode"]
+
+[[projects]]
+  name = "opencode-bot-2"
+  show_context_indicator = true
+  reply_footer = true
+  inject_sender = false
+  admin_from = "*"
+
+  [projects.agent]
+    type = "opencode"
+
+    [projects.agent.options]
+      mode = "bypassPermissions"
+      model = "opencode-go/kimi-k2.6"
+      work_dir = "/Users/samhuang/git"
+
+[[projects]]
+  name = "opencode-bot"
+  show_context_indicator = true
+  reply_footer = true
+  inject_sender = false
+  admin_from = "sammy_huang,5698334471"
+
+  [projects.agent]
+    type = "opencode"
+
+    [projects.agent.options]
+      mode = "default"
+      model = "opencode-go/deepseek-v4-flash"
+      work_dir = "/Users/samhuang/git"
+
+  [[projects.platforms]]
+    type = "telegram"
+
+    [projects.platforms.options]
+      allow_from = "sammy_huang,5698334471"
+      enable_reactions = true
+      share_session_in_channel = true
+      token = "8672275116:AAGQ2dml7p7cj9837wZZRHsMBNShnzAxvu4"
+
+[[projects]]
+  name = "codex-bot"
+  show_context_indicator = true
+  reply_footer = true
+  inject_sender = false
+  admin_from = "sammy_huang,5698334471"
+
+  [projects.agent]
+    type = "codex"
+
+    [projects.agent.options]
+      mode = "full-auto"
+      work_dir = "/Users/samhuang/git"
+
+  [[projects.platforms]]
+    type = "telegram"
+
+    [projects.platforms.options]
+      allow_from = "sammy_huang,5698334471"
+      enable_reactions = true
+      share_session_in_channel = true
+      token = "8731659961:AAGQqFvUOS39j0BrCO6FZ7tWehqGKBFQe_g"
+
+[[projects]]
+  name = "codex-bot-2"
+  show_context_indicator = true
+  reply_footer = true
+  inject_sender = false
+  admin_from = "*"
+
+  [projects.agent]
+    type = "codex"
+
+    [projects.agent.options]
+      mode = "full-auto"
+      work_dir = "/Users/samhuang/git"
+
+[log]
+  level = "info"
+
+[speech]
+  enabled = false
+  provider = ""
+  language = ""
+
+  [speech.openai]
+    api_key = ""
+    base_url = ""
+    model = ""
+
+  [speech.groq]
+    api_key = ""
+    model = ""
+
+  [speech.qwen]
+    api_key = ""
+    base_url = ""
+    model = ""
+
+  [speech.gemini]
+    api_key = ""
+    model = ""
+
+[tts]
+  enabled = false
+  provider = ""
+  voice = ""
+  tts_mode = ""
+  max_text_len = 0
+
+  [tts.openai]
+    api_key = ""
+    base_url = ""
+    model = ""
+
+  [tts.qwen]
+    api_key = ""
+    base_url = ""
+    model = ""
+
+  [tts.minimax]
+    api_key = ""
+    base_url = ""
+    model = ""
+
+[cron]
+  session_mode = ""
+
+[webhook]
+  port = 0
+
+[bridge]
+  enabled = true
+  port = 9810
+  token = "b36b3e0b77e86b8b0313ce43940c7439"
+  cors_origins = ["*"]
+
+[management]
+  enabled = true
+  port = 9820
+  token = "cbe7d597dfc3ff2684d16824aed9f8fb"
+  cors_origins = ["*"]
