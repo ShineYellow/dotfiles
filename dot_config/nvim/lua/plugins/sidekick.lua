@@ -4,6 +4,13 @@ return {
 
   opts = {
     cli = {
+      tools = {
+        codex = {
+          cmd = { "codex", "--yolo" },
+          -- or the explicit equivalent:
+          -- cmd = { "codex", "--dangerously-bypass-approvals-and-sandbox" },
+        },
+      },
       mux = {
         enabled = false,
         backend = "zellij",
@@ -13,7 +20,25 @@ return {
 
   keys = function()
     return {
-      { "<tab>", LazyVim.cmp.map({ "ai_nes" }, "<tab>"), mode = { "n" }, expr = true },
+      {
+        "<tab>",
+        function()
+          -- if there is a next edit, jump to it, otherwise apply it if any
+          if not require("sidekick").nes_jump_or_apply() then
+            return "<Tab>" -- fallback to normal tab
+          end
+        end,
+        expr = true,
+        desc = "Goto/Apply Next Edit Suggestion",
+      },
+      {
+        "<c-.>",
+        function()
+          require("sidekick.cli").focus()
+        end,
+        desc = "Sidekick Focus",
+        mode = { "n", "t", "i", "x" },
+      },
       {
         "<leader>aa",
         function()
@@ -22,14 +47,23 @@ return {
         desc = "Sidekick Toggle CLI",
       },
       {
-        "<leader>ac",
+        "<leader>as",
+        function()
+          require("sidekick.cli").select()
+        end,
+        -- Or to select only installed tools:
+        -- require("sidekick.cli").select({ filter = { installed = true } })
+        desc = "Select CLI",
+      },
+      {
+        "<leader>ad",
         function()
           require("sidekick.cli").close()
         end,
         desc = "Detach a CLI Session",
       },
       {
-        "<leader>as",
+        "<leader>at",
         function()
           require("sidekick.cli").send({ msg = "{this}" })
         end,
@@ -58,6 +92,21 @@ return {
         end,
         mode = { "n", "x" },
         desc = "Sidekick Select Prompt",
+      },
+      -- Example of a keybinding to open Claude directly
+      {
+        "<leader>ac",
+        function()
+          require("sidekick.cli").toggle({ name = "codex" })
+        end,
+        desc = "Sidekick Toggle Claude",
+      },
+      {
+        "<leader>ao",
+        function()
+          require("sidekick.cli").toggle({ name = "opencode" })
+        end,
+        desc = "Sidekick Toggle Claude",
       },
     }
   end,

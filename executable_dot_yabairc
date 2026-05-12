@@ -40,5 +40,6 @@ sudo /opt/homebrew/bin/yabai --load-sa
 /opt/homebrew/bin/yabai -m rule --add app="^iStat*" sticky=on layer=above manage=off border=off
 /opt/homebrew/bin/yabai -m rule --add app="^System Preferences*" manage=off
 /opt/homebrew/bin/yabai -m rule --add title="^Windows 11 Dock Helper$" manage=off
+/opt/homebrew/bin/yabai -m rule --add app="^Feishu$" manage=off
 
 echo "yabai configuration loaded.."

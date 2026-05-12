@@ -90,7 +90,7 @@ alias mux="tmuxinator"
 alias cat="bat"
 alias tree="eza -T"
 alias ls="exa"
-alias r="ranger"
+alias r="ralph"
 
 
 alias pn="pnpm"
@@ -119,16 +119,20 @@ alias yabairc='nvim ~/.yabairc'
 
 alias clauded="claude --dangerously-skip-permissions"
 alias geminid="gemini --approval-mode yolo"
+alias codexd="codex --dangerously-bypass-approvals-and-sandbox"
 
 alias vibe="npx vibe-kanban"
-alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
+# alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
 
 
 alias uat-db='KUBECONFIG=/Users/samhuang/.kube/ali-vdc-uat kubectl port-forward pod/infra-db-mysql-0 -n mysql 3306:3306'
 
 alias upgrade-at="brew upgrade --cask --no-quarantine antigravity-tools"
 
-alias zai='zellij --layout ai'
+alias zza='zellij --layout claude'
+alias zzo='zellij --layout opencode'
+alias zzc='zellij --layout codex'
+
 alias zellijrc='nvim ~/.config/zellij'
 alias za='zellij attach "$(zellij list-sessions -s | fzf)"'
 alias zk='zellij kill-session "$(zellij list-sessions -s | fzf)"'

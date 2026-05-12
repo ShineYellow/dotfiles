@@ -149,7 +149,7 @@ keybinds clear-defaults=true {
         }
     }
     shared_among "normal" "locked" {
-        bind "Ctrl space" { SwitchToMode "tmux"; }
+        bind "Ctrl ." { SwitchToMode "tmux"; }
         bind "Ctrl Alt left" { MoveFocusOrTab "left"; }
         bind "Ctrl Alt down" { MoveFocus "down"; }
         bind "Ctrl Alt up" { MoveFocus "up"; }
@@ -192,7 +192,7 @@ keybinds clear-defaults=true {
         bind "Ctrl s" { SwitchToMode "scroll"; }
     }
     shared_except "locked" "scroll" "search" "tmux" {
-        bind "Ctrl space" { SwitchToMode "tmux"; }
+        bind "Ctrl ." { SwitchToMode "tmux"; }
     }
     shared_except "locked" "tab" {
         bind "Ctrl t" { SwitchToMode "tab"; }

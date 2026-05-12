@@ -59,6 +59,9 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 #export PATH="$MAVEN_HOME/bin:$PATH"
 
 
+# for terraform provider cache with tofu 
+export TG_PROVIDER_CACHE_DIR=/Users/samhuang/.terraform.d/plugin-cache
+
 # bun completions
 [ -s "/Users/samhuang/.bun/_bun" ] && source "/Users/samhuang/.bun/_bun"
 

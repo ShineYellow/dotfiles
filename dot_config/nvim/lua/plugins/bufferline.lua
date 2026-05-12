@@ -2,6 +2,9 @@ return {
   {
     "akinsho/bufferline.nvim",
     enabled = true,
+    keys = {
+      { "<S-h>", false },
+    },
     opts = {
       options = {
         custom_filter = function(buf, buf_nums)

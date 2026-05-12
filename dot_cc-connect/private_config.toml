@@ -10,22 +10,9 @@ language = "en"
   agent_types = ["codex", "opencode"]
 
 [[projects]]
-  name = "opencode-bot-2"
-  show_context_indicator = true
-  reply_footer = true
-  inject_sender = false
-  admin_from = "*"
-
-  [projects.agent]
-    type = "opencode"
-
-    [projects.agent.options]
-      mode = "bypassPermissions"
-      model = "opencode-go/kimi-k2.6"
-      work_dir = "/Users/samhuang/git"
-
-[[projects]]
   name = "opencode-bot"
+  mode = "multi-workspace"
+  base_dir = "~/git"
   show_context_indicator = true
   reply_footer = true
   inject_sender = false
@@ -37,7 +24,6 @@ language = "en"
     [projects.agent.options]
       mode = "default"
       model = "opencode-go/deepseek-v4-flash"
-      work_dir = "/Users/samhuang/git"
 
   [[projects.platforms]]
     type = "telegram"
@@ -46,10 +32,13 @@ language = "en"
       allow_from = "sammy_huang,5698334471"
       enable_reactions = true
       share_session_in_channel = true
+      group_reply_all = true
       token = "8672275116:AAGQ2dml7p7cj9837wZZRHsMBNShnzAxvu4"
 
 [[projects]]
   name = "codex-bot"
+  mode = "multi-workspace"
+  base_dir = "~/git"
   show_context_indicator = true
   reply_footer = true
   inject_sender = false
@@ -60,7 +49,6 @@ language = "en"
 
     [projects.agent.options]
       mode = "full-auto"
-      work_dir = "/Users/samhuang/git"
 
   [[projects.platforms]]
     type = "telegram"
@@ -68,22 +56,33 @@ language = "en"
     [projects.platforms.options]
       allow_from = "sammy_huang,5698334471"
       enable_reactions = true
+      group_reply_all = true
       share_session_in_channel = true
       token = "8731659961:AAGQqFvUOS39j0BrCO6FZ7tWehqGKBFQe_g"
 
+
 [[projects]]
-  name = "codex-bot-2"
+  name = "pi-bot"
+  mode = "multi-workspace"
+  base_dir = "~/git"
   show_context_indicator = true
   reply_footer = true
   inject_sender = false
-  admin_from = "*"
+  admin_from = "sammy_huang,5698334471"
 
   [projects.agent]
-    type = "codex"
+    type = "pi"
 
-    [projects.agent.options]
-      mode = "full-auto"
-      work_dir = "/Users/samhuang/git"
+  [[projects.platforms]]
+    type = "telegram"
+
+    [projects.platforms.options]
+      allow_from = "sammy_huang,5698334471"
+      enable_reactions = true
+      group_reply_all = true
+      share_session_in_channel = true
+      token = "8640833562:AAE9w6TeM-HVXCPdWyp1qAQJSsCCVmrn_l4"
+
 
 [log]
   level = "info"
