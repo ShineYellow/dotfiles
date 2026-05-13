@@ -99,14 +99,21 @@ return {
         function()
           require("sidekick.cli").toggle({ name = "codex" })
         end,
-        desc = "Sidekick Toggle Claude",
+        desc = "Sidekick Toggle codex",
       },
       {
         "<leader>ao",
         function()
           require("sidekick.cli").toggle({ name = "opencode" })
         end,
-        desc = "Sidekick Toggle Claude",
+        desc = "Sidekick Toggle opencode",
+      },
+      {
+        "<leader>ap",
+        function()
+          require("sidekick.cli").toggle({ name = "pi" })
+        end,
+        desc = "Sidekick Toggle pi",
       },
     }
   end,
