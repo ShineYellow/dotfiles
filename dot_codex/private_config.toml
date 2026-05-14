@@ -61,7 +61,7 @@ status_line_use_colors = true
 "gpt-5.5" = 4
 
 [marketplaces.cloud-skills]
-last_updated = "2026-05-14T01:20:07Z"
+last_updated = "2026-05-14T02:36:09Z"
 last_revision = "af79d35db74ff2b8273a9a02e95b6ee7d3abd125"
 source_type = "git"
 source = "git@github.com:zilliztech/cloud-skills.git"
@@ -71,3 +71,10 @@ enabled = false
 
 [features]
 goals = true
+hooks = true
+
+[hooks.state]
+
+[hooks.state."/Users/samhuang/.codex/hooks.json:stop:0:0"]
+enabled = true
+trusted_hash = "sha256:87b531ce0e0eff716f918b163f7739c433180eee49a1a26cdc1bddcd226f633b"

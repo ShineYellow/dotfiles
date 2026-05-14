@@ -1,6 +1,14 @@
 #!/bin/sh
 
 event="${1:-Notification}"
+log_file="${CODEX_HOME:-$HOME/.codex}/hooks/macos-notify.log"
+
+log() {
+  timestamp="$(date '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date)"
+  printf '%s event=%s %s\n' "$timestamp" "$event" "$*" >>"$log_file" 2>/dev/null || true
+}
+
+log "started"
 
 resolve_zellij_session_name() {
   if [ -n "${CODEX_ZELLIJ_SESSION_NAME:-}" ]; then
@@ -61,6 +69,7 @@ on run argv
   display notification (item 2 of argv) with title (item 1 of argv)
 end run
 APPLESCRIPT
+log "sent title=$(printf '%s' "$title" | tr '\n' ' ') message=$(printf '%s' "$message" | tr '\n' ' ')"
 
 printf '{}\n'
 exit 0

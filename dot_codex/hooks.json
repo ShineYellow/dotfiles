@@ -10,17 +10,6 @@
           }
         ]
       }
-    ],
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/samhuang/.codex/hooks/macos-notify.sh Notification",
-            "timeout": 5
-          }
-        ]
-      }
     ]
   }
 }
