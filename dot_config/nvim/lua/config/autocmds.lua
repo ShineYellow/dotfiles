@@ -26,6 +26,21 @@ vim.api.nvim_create_autocmd("User", {
   end,
 })
 
+-- Force English input when returning to Normal mode.
+local im_select = vim.fn.exepath("im-select")
+local english_input_source = "com.apple.keylayout.US"
+
+if im_select ~= "" then
+  local input_method_group = vim.api.nvim_create_augroup("force_english_input", { clear = true })
+
+  vim.api.nvim_create_autocmd({ "InsertLeave", "CmdlineLeave", "VimEnter" }, {
+    group = input_method_group,
+    callback = function()
+      vim.fn.jobstart({ im_select, english_input_source }, { detach = true })
+    end,
+  })
+end
+
 --
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "gitcommit" },
