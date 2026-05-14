@@ -66,6 +66,45 @@ function ggf {
   gtr cd "$(git gtr list --porcelain | awk '{print $2}' | fzf)" ; zellij --layout ai
 }
 
+
+# Attach to an existing zellij session, or create a new one if it doesn't exist.
+# Usage: zj <session_name> [layout]
+#   $1 - session name
+#   $2 - layout file or layout name (optional)
+zj() {
+  if [ $# -eq 0 ]; then
+    zellij attach "$(zellij list-sessions -s | fzf)"
+  elif [ $# -eq 1 ]; then
+    local name="$1"
+    local matches
+    matches=$(zellij list-sessions -s | grep -i "$name" || true)
+
+    if [ -z "$matches" ]; then
+      zellij -s "$name"
+    else
+      local count
+      count=$(echo "$matches" | wc -l | tr -d ' ')
+
+      if [ "$count" -eq 1 ]; then
+        zellij attach "$matches"
+      else
+        zellij attach "$(echo "$matches" | fzf)"
+      fi
+    fi
+  else
+    local name="$1"
+    local layout="${2:-default}"
+
+    if zellij list-sessions | awk '{print $1}' | grep -qx "$name"; then
+      zellij attach "$name"
+    else
+      zellij -s "$name" options --default-layout "$layout"
+
+    fi
+  fi
+
+}
+
 function uninstall-gsd {
   npx get-shit-done-cc --claude --global --uninstall
   npx get-shit-done-cc --opencode --global --uninstall

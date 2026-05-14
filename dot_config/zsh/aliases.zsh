@@ -151,6 +151,8 @@ if command -v bat &> /dev/null; then
   alias catt="bat --theme \"Visual Studio Dark+\""
 fi
 
+alias picd="cd ~/.pi/agent/"
+alias pirc="nvim ~/.pi/agent/"
 
 case "$(uname -s)" in
 
