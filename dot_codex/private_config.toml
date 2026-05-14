@@ -1,0 +1,73 @@
+personality = "pragmatic"
+model_reasoning_effort = "high"
+model = "gpt-5.5"
+model_provider = "local"
+
+[model_providers.local]
+name = "local"
+base_url = "https://token.zasdas.com/v1"
+wire_api = "responses"
+
+[projects."/Users/samhuang/git/terraform-provider-zillizcloud"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/zilliz-cloud"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/sandbox/aws-uat"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/sandbox/aws-prod"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/cc-switch"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/sandbox/aws-byoc"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/cc-connect"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/.config/nvim"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/sandbox/vpc-peering"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/sandbox/vpc-peering2"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/vdc-deploy"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/.codex"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/.config/zellij/layouts"]
+trust_level = "trusted"
+
+[tui]
+status_line = ["model-with-reasoning", "current-dir", "context-used", "task-progress"]
+status_line_use_colors = true
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+
+[marketplaces.cloud-skills]
+last_updated = "2026-05-14T01:20:07Z"
+last_revision = "af79d35db74ff2b8273a9a02e95b6ee7d3abd125"
+source_type = "git"
+source = "git@github.com:zilliztech/cloud-skills.git"
+
+[plugins."sre-toolkit@cloud-skills"]
+enabled = false
+
+[features]
+goals = true
