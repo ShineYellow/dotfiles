@@ -8,3 +8,4 @@ vim.g.db_ui_disable_mappings_sql = 1
 -- as the root:
 --vim.g.root_spec = { "cwd" }
 --
+vim.g.root_spec = { { ".git" }, "lsp", "cwd" }
