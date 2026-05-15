@@ -1,0 +1,2 @@
+WRN 2026-05-06T19:55:31.261 c/nvim.43539.0 server_start:199: Failed to start server: operation not permitted: /var/folders/q9/06c1_qkx5dvfbz5wvdbxg4h00000gn/T/nvim.samhuang/Xbglus/nvim.49240.0
+WRN 2026-05-06T19:55:40.361 c/nvim.43539.0 server_start:199: Failed to start server: operation not permitted: /var/folders/q9/06c1_qkx5dvfbz5wvdbxg4h00000gn/T/nvim.samhuang/oVkReE/nvim.49320.0

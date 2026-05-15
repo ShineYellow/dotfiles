@@ -1,3 +1,14 @@
+-- Only these Sidekick CLI profiles stay registered (picker, health, toggles).
+-- Edit this set, then restart Neovim.
+local CLI_ALLOWLIST = {
+  codex = true,
+  copilot = true,
+  cursor = true,
+  gemini = true,
+  opencode = true,
+  pi = true,
+}
+
 return {
   "folke/sidekick.nvim",
   event = "VeryLazy",
@@ -17,6 +28,16 @@ return {
       },
     },
   },
+
+  config = function(_, opts)
+    require("sidekick").setup(opts)
+    local tools = require("sidekick.config").cli.tools
+    for name in pairs(tools) do
+      if not CLI_ALLOWLIST[name] then
+        tools[name] = nil
+      end
+    end
+  end,
 
   keys = function()
     return {
@@ -93,7 +114,6 @@ return {
         mode = { "n", "x" },
         desc = "Sidekick Select Prompt",
       },
-      -- Example of a keybinding to open Claude directly
       {
         "<leader>ac",
         function()
@@ -109,7 +129,7 @@ return {
         desc = "Sidekick Toggle opencode",
       },
       {
-        "<leader>ap",
+        "<leader>aP",
         function()
           require("sidekick.cli").toggle({ name = "pi" })
         end,
