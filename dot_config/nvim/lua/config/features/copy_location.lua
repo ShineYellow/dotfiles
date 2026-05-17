@@ -50,6 +50,14 @@ function M.setup()
     visual_range_location(":p")
   end, { desc = "Copy absolute file location range" })
 
+  vim.keymap.set("n", "<leader>cy", function()
+    current_line_location()
+  end, { desc = "Copy file location" })
+
+  vim.keymap.set("n", "<leader>cY", function()
+    current_line_location(":p")
+  end, { desc = "Copy absolute file location" })
+
   vim.keymap.set("n", "<leader>cb", function()
     copy_location(buffer_path())
   end, { desc = "Copy relative file path" })
