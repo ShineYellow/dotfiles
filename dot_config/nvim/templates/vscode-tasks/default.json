@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+
+  "tasks": [
+    {
+      "label": "run plan",
+      "type": "shell",
+      "command": "set -a; source \"${workspaceFolder}/${input:envFile}\"; set +a; just plan \"${fileDirname}\""
+    },
+    {
+      "label": "run apply",
+      "type": "shell",
+      "command": "set -a; source \"${workspaceFolder}/${input:envFile}\"; set +a; just apply \"${fileDirname}\""
+    },
+    {
+      "label": "run destroy",
+      "type": "shell",
+      "command": "set -a; source \"${workspaceFolder}/${input:envFile}\"; set +a; just destroy \"${fileDirname}\""
+    }
+  ],
+  "inputs": [
+    {
+      "id": "envFile",
+      "type": "pickString",
+      "description": "选择要加载的 env 文件",
+      "default": ".env.test",
+      "options": [".env.test", ".env.byoc.local", ".env.uat.publish"]
+    }
+  ]
+}

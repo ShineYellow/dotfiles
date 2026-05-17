@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "echo 'replace this command in .vscode/tasks.json'",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
