@@ -9,6 +9,20 @@ return {
           vim.cmd.cd(picker:dir())
         end,
       },
+      sources = {
+        explorer = {
+          hidden = true,
+          ignored = true,
+          win = {
+            list = {
+              keys = {
+                H = { { "toggle_hidden", "toggle_ignored" }, desc = "Toggle Hidden and Ignored Files" },
+                I = false,
+              },
+            },
+          },
+        },
+      },
     },
   },
 }

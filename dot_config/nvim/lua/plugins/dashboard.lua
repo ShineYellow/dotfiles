@@ -32,7 +32,7 @@ return {
         { icon = " ", key = "x", desc = "Lazy Extras", action = ":LazyExtras" },
         { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
         { icon = " ", key = "q", desc = "Quit", action = ":qa" },
-        { icon = "󰆼 ", key = "d", desc = "DBUI", action = ":bd | DBUI" },
+        { icon = "󰆼 ", key = "d", desc = "Dbee", action = ":lua require('dbee').toggle()" },
       }
       return opts
     end,
