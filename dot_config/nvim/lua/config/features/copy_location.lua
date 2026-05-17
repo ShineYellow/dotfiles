@@ -34,35 +34,27 @@ local function visual_range_location(modifier)
 end
 
 function M.setup()
-  vim.keymap.set("n", "Y", function()
+  vim.keymap.set("n", "<localleader>l", function()
     current_line_location()
-  end, { desc = "Copy file location" })
+  end, { desc = "Copy relative path with line" })
 
-  vim.keymap.set("n", "<D-Y>", function()
-    current_line_location(":p")
-  end, { desc = "Copy absolute file location" })
-
-  vim.keymap.set("x", "Y", function()
+  vim.keymap.set("x", "<localleader>l", function()
     visual_range_location()
-  end, { desc = "Copy file location range" })
+  end, { desc = "Copy relative path with line range" })
 
-  vim.keymap.set("x", "<D-Y>", function()
-    visual_range_location(":p")
-  end, { desc = "Copy absolute file location range" })
-
-  vim.keymap.set("n", "<leader>cy", function()
-    current_line_location()
-  end, { desc = "Copy file location" })
-
-  vim.keymap.set("n", "<leader>cY", function()
+  vim.keymap.set("n", "<localleader>L", function()
     current_line_location(":p")
-  end, { desc = "Copy absolute file location" })
+  end, { desc = "Copy absolute path with line" })
 
-  vim.keymap.set("n", "<leader>cb", function()
+  vim.keymap.set("x", "<localleader>L", function()
+    visual_range_location(":p")
+  end, { desc = "Copy absolute path with line range" })
+
+  vim.keymap.set("n", "<localleader>b", function()
     copy_location(buffer_path())
   end, { desc = "Copy relative file path" })
 
-  vim.keymap.set("n", "<leader>cB", function()
+  vim.keymap.set("n", "<localleader>B", function()
     copy_location(buffer_path(":p"))
   end, { desc = "Copy absolute file path" })
 end
