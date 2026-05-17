@@ -1,80 +1,79 @@
-personality = "pragmatic"
-model_reasoning_effort = "high"
-model = "gpt-5.5"
-model_provider = "local"
+approvals_reviewer = "user"
+[projects."/private/tmp"]
+trust_level = "trusted"
 
-[model_providers.local]
-name = "local"
-base_url = "https://token.zasdas.com/v1"
-wire_api = "responses"
+[projects."/private/tmp/pr"]
+trust_level = "trusted"
 
-[projects."/Users/samhuang/git/terraform-provider-zillizcloud"]
+[projects."/private/tmp/todo"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/zilliz-cloud-mgmt"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/.config/opencode"]
 trust_level = "trusted"
 
 [projects."/Users/samhuang/git/zilliz-cloud"]
 trust_level = "trusted"
 
-[projects."/Users/samhuang/git/sandbox/aws-uat"]
-trust_level = "trusted"
-
-[projects."/Users/samhuang/git/sandbox/aws-prod"]
-trust_level = "trusted"
-
-[projects."/Users/samhuang"]
-trust_level = "trusted"
-
-[projects."/Users/samhuang/git/cc-switch"]
-trust_level = "trusted"
-
-[projects."/Users/samhuang/git/sandbox/aws-byoc"]
+[projects."/Users/samhuang/git/terraform-provider-zillizcloud"]
 trust_level = "trusted"
 
 [projects."/Users/samhuang/git"]
 trust_level = "trusted"
 
-[projects."/Users/samhuang/git/cc-connect"]
+[projects."/Users/samhuang/Downloads/untitled folder"]
+trust_level = "trusted"
+
+[projects."/Users/samhuang/git/vdc-deploy-prod"]
 trust_level = "trusted"
 
 [projects."/Users/samhuang/.config/nvim"]
 trust_level = "trusted"
 
-[projects."/Users/samhuang/git/sandbox/vpc-peering"]
-trust_level = "trusted"
-
 [projects."/Users/samhuang/git/sandbox/vpc-peering2"]
 trust_level = "trusted"
 
-[projects."/Users/samhuang/git/vdc-deploy"]
-trust_level = "trusted"
-
-[projects."/Users/samhuang/.codex"]
-trust_level = "trusted"
-
-[projects."/Users/samhuang/.config/zellij/layouts"]
-trust_level = "trusted"
-
-[tui]
-status_line = ["model-with-reasoning", "current-dir", "context-used", "task-progress"]
-status_line_use_colors = true
-
 [tui.model_availability_nux]
 "gpt-5.5" = 4
+[features]
+goals = true
 
 [marketplaces.cloud-skills]
-last_updated = "2026-05-14T02:36:09Z"
+last_updated = "2026-05-17T12:09:34Z"
 last_revision = "af79d35db74ff2b8273a9a02e95b6ee7d3abd125"
 source_type = "git"
-source = "git@github.com:zilliztech/cloud-skills.git"
+source = "https://github.com/zilliztech/cloud-skills.git"
 
+[marketplaces.openai-bundled]
+last_updated = "2026-05-17T09:12:39Z"
+source_type = "local"
+source = "/Users/samhuang/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-05-08T09:30:33Z"
+source_type = "local"
+source = "/Users/samhuang/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[plugins]
 [plugins."sre-toolkit@cloud-skills"]
 enabled = false
 
-[features]
-goals = true
-hooks = true
+[plugins."ecc@ecc"]
+enabled = false
 
-[hooks.state]
-
-[hooks.state."/Users/samhuang/.codex/hooks.json:stop:0:0"]
+[plugins."browser-use@openai-bundled"]
 enabled = true
-trusted_hash = "sha256:87b531ce0e0eff716f918b163f7739c433180eee49a1a26cdc1bddcd226f633b"
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
