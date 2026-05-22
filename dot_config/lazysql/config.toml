@@ -1,0 +1,62 @@
+ConfigFile = '/Users/samhuang/.config/lazysql/config.toml'
+
+[application]
+DefaultPageSize = 300
+DisableSidebar = false
+SidebarOverlay = false
+MaxQueryHistoryPerConnection = 100
+TreeWidth = 30
+JSONViewerWordWrap = false
+
+[keymap.Home]
+MoveLeft="F1"
+SwitchToEditorView = "I"
+ToggleQueryHistory = "H"
+Save="Enter"
+SwitchToConnectionsView="P"
+Quit="Q"
+
+
+[keymap.querypreview]
+Save="Enter"
+
+[keymap.sidebar]
+Edit="i"
+UnfocusSidebar="Esc"
+
+
+[keymap.Editor]
+Execute="\\"
+
+[keymap.Table]
+Edit="i"
+FocusSidebar="e"
+
+
+[[database]]
+Name = 'infra-api'
+URL = 'mysql://root:zillizinfra@infra-db-ed7077ecb8ba369b.elb.us-west-2.amazonaws.com:3306/infra'
+Provider = 'mysql'
+Username = ''
+Password = ''
+Hostname = ''
+Port = ''
+DBName = 'infra'
+URLParams = ''
+ReadOnly = false
+Schemas = []
+Commands = []
+
+[[database]]
+Name = 'staging-tc'
+URL = 'mysql://root:8QsTsh4h4zz2FEqZ%2B@10.8.0.7:3306'
+Provider = 'mysql'
+Username = ''
+Password = ''
+Hostname = ''
+Port = ''
+DBName = ''
+URLParams = ''
+ReadOnly = false
+Schemas = []
+Commands = []
