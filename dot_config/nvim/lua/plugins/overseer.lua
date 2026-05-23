@@ -33,10 +33,16 @@ return {
       end, { desc = "Restart the most recent finished overseer task" })
     end,
     keys = {
+      { "<leader>ow", false },
       {
-        "<leader>ol",
+        "<leader>oh",
+        "<cmd>OverseerToggle!<cr>",
+        desc = "task history",
+      },
+      {
+        "<leader>or",
         "<cmd>OverseerRestartLast<cr>",
-        desc = "Overseer: restart last task",
+        desc = "run recent",
       },
     },
   },

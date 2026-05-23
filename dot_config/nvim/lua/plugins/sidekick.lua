@@ -18,8 +18,9 @@ return {
       tools = {
         codex = {
           cmd = { "codex", "--yolo" },
-          -- or the explicit equivalent:
-          -- cmd = { "codex", "--dangerously-bypass-approvals-and-sandbox" },
+        },
+        cursor = {
+          cmd = { "cursor-agent", "--yolo" },
         },
       },
       mux = {
@@ -92,7 +93,7 @@ return {
         desc = "Send This",
       },
       {
-        "<leader>af",
+        "<leader>ab",
         function()
           require("sidekick.cli").send({ msg = "{file}" })
         end,
@@ -107,7 +108,7 @@ return {
         desc = "Send Visual Selection",
       },
       {
-        "<leader>ap",
+        "<leader>aP",
         function()
           require("sidekick.cli").prompt()
         end,
@@ -129,7 +130,7 @@ return {
         desc = "Sidekick Toggle opencode",
       },
       {
-        "<leader>aP",
+        "<leader>ap",
         function()
           require("sidekick.cli").toggle({ name = "pi" })
         end,

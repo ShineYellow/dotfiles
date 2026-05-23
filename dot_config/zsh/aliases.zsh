@@ -120,6 +120,8 @@ alias yabairc='nvim ~/.yabairc'
 alias clauded="claude --dangerously-skip-permissions"
 alias geminid="gemini --approval-mode yolo"
 alias codexd="codex --dangerously-bypass-approvals-and-sandbox"
+alias ag="agy --dangerously-skip-permissions"
+alias ll="lazysql"
 
 alias vibe="npx vibe-kanban"
 # alias opencode="https_proxy=http://localhost:7890 http_proxy=http://localhost:7890 NO_PROXY=localhost,127.0.0.1 opencode"
