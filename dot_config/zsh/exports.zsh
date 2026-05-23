@@ -1,5 +1,11 @@
 #!/bin/sh
 # HISTFILE="$XDG_DATA_HOME"/zsh/history
+typeset -U path PATH
+
+path_prepend() {
+    [[ -d "$1" ]] && path=("$1" $path)
+}
+
 HISTSIZE=1000000
 SAVEHIST=1000000
 export XDG_CONFIG_HOME=$HOME/.config
@@ -8,37 +14,35 @@ export EDITOR="nvim"
 # export BROWSER="brave"
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
-export PATH="$HOME/.local/bin":$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.local/share/go/bin:$PATH
-export PATH=$HOME/.fnm:$PATH
-export PATH="$HOME/.local/share/neovim/bin":$PATH
+path_prepend "$HOME/.local/bin"
+path_prepend "$HOME/.cargo/bin"
+path_prepend "$HOME/.local/share/go/bin"
+path_prepend "$HOME/.fnm"
+path_prepend "$HOME/.local/share/neovim/bin"
 export GOPATH=$HOME/.local/share/go
 export GOBIN=$GOPATH/bin
 export XDG_CURRENT_DESKTOP="Wayland"
 # kubectl krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+path_prepend "${KREW_ROOT:-$HOME/.krew}/bin"
 # opencode
-export PATH=/Users/samhuang/.opencode/bin:$PATH
+path_prepend "$HOME/.opencode/bin"
 #export PATH="$PATH:./node_modules/.bin"
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+path_prepend "$BUN_INSTALL/bin"
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]; then
+if [[ -x "$HOME/.miniconda/bin/conda" ]]; then
+    __conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+    if [[ $? -eq 0 ]]; then
+        eval "$__conda_setup"
+    elif [[ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]]; then
         . "$HOME/.miniconda/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/.miniconda/bin:$PATH"
     fi
+    unset __conda_setup
 fi
-unset __conda_setup
 # <<< conda initialize <<<
 
 #export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f -not -name 'kubectx' | tr '\n' ':')
@@ -62,10 +66,6 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 # for terraform provider cache with tofu 
 export TG_PROVIDER_CACHE_DIR=/Users/samhuang/.terraform.d/plugin-cache
 
-# bun completions
-[ -s "/Users/samhuang/.bun/_bun" ] && source "/Users/samhuang/.bun/_bun"
-
-
 # export GOOGLE_CLOUD_PROJECT="gen-lang-client-0549631171"
 
 # Homebrew auto update is slow, so disable it
@@ -74,3 +74,4 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # GOBIN
 #export PATH="$GOBIN:$PATH"
 [ -f ~/.env ] && { set -a; source ~/.env; set +a; }
+unset -f path_prepend
