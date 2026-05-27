@@ -1,6 +1,6 @@
 #!/bin/sh
 # HISTFILE="$XDG_DATA_HOME"/zsh/history
-typeset -U path PATH
+typeset -gU path PATH
 
 path_prepend() {
     [[ -d "$1" ]] && path=("$1" $path)
@@ -31,19 +31,6 @@ path_prepend "$HOME/.opencode/bin"
 export BUN_INSTALL="$HOME/.bun"
 path_prepend "$BUN_INSTALL/bin"
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if [[ -x "$HOME/.miniconda/bin/conda" ]]; then
-    __conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
-    if [[ $? -eq 0 ]]; then
-        eval "$__conda_setup"
-    elif [[ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]]; then
-        . "$HOME/.miniconda/etc/profile.d/conda.sh"
-    fi
-    unset __conda_setup
-fi
-# <<< conda initialize <<<
 
 #export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f -not -name 'kubectx' | tr '\n' ':')
 
