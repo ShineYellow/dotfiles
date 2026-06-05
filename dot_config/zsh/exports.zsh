@@ -19,8 +19,6 @@ path_prepend "$HOME/.cargo/bin"
 path_prepend "$HOME/.local/share/go/bin"
 path_prepend "$HOME/.fnm"
 path_prepend "$HOME/.local/share/neovim/bin"
-export GOPATH=$HOME/.local/share/go
-export GOBIN=$GOPATH/bin
 export XDG_CURRENT_DESKTOP="Wayland"
 # kubectl krew
 path_prepend "${KREW_ROOT:-$HOME/.krew}/bin"
