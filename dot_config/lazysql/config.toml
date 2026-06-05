@@ -59,3 +59,19 @@ URLParams = ''
 ReadOnly = false
 Schemas = []
 Commands = []
+
+[[database]]
+Name = 'uat3-vdc'
+URL = 'mysql://admin:FdL66STHoUhHwsZUHsgp@uat-vdc-mysql.cluster-c0ybmd1el2xt.us-west-2.rds.amazonaws.com'
+Provider = 'mysql'
+Username = ''
+Password = ''
+Hostname = ''
+Port = ''
+DBName = ''
+URLParams = ''
+ReadOnly = false
+Schemas = []
+Commands = []
+
+
