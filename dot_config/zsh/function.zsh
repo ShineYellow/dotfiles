@@ -121,3 +121,8 @@ function uninstall-gsd {
   npx get-shit-done-cc --codebuddy --global --uninstall
   npx get-shit-done-cc --cline --global --uninstall
 }
+
+function abook {
+  book=$(fd . --type f /Users/samhuang/git/agent-rules-books --exclude docs --exclude _rule-workbench | fzf)
+  ln -s "$book" AGENTS.md
+}
