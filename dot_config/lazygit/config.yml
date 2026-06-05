@@ -1,6 +1,11 @@
+gui:
+  sidePanelWidth: 0.2
+  expandFocusedSidePanel: false
+
 git:
   overrideGpg: true
   commit:
     signOff: true
   pagers:
+    #- pager: delta --paging=never --hunk-header-style=omit
     - pager: delta --paging=never --hunk-header-style=omit
