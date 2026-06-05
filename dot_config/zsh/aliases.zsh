@@ -142,6 +142,7 @@ alias zd='zellij delete-session "$(zellij list-sessions -s | fzf)" --force'
 alias zl='zellij list-sessions'
 
 alias gsd='npx get-shit-done-cc@latest'
+#alias book=' fd . --type f /Users/samhuang/git/agent-rules-books --exclude docs --exclude _rule-workbench | fzf'
 
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
