@@ -1,0 +1,45 @@
+{
+  "lastChangelogVersion": "0.84.2",
+  "defaultProvider": "opencode-go",
+  "defaultModel": "ox-alpha-free",
+  "enableSkillCommands": true,
+  "defaultThinkingLevel": "high",
+  "skills": [
+    "~/.codex/skills"
+  ],
+  "packages": [
+    "npm:pi-mcp-adapter",
+    "npm:@diegopetrucci/pi-openai-fast",
+    "npm:pi-session-manager",
+    "npm:pi-cursor-sdk",
+    "npm:pi-lens",
+    "npm:pi-subagents",
+    "npm:@ff-labs/pi-fff",
+    {
+      "source": "npm:@gotgenes/pi-permission-system",
+      "extensions": [
+        "-src/index.ts"
+      ]
+    },
+    "npm:pi-simplify",
+    "npm:pi-web-access",
+    "npm:@narumitw/pi-usage",
+    "npm:pi-cliproxyapi",
+    "npm:@narumitw/pi-goal"
+  ],
+  "theme": "dark",
+  "hideThinkingBlock": false,
+  "enabledModels": [
+    "xai/grok-4.6",
+    "cursor/grok-4.6",
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-5.6-terra",
+    "openai-codex/gpt-5.6-luna",
+    "github-copilot/claude-sonnet-4.6",
+    "zilliz2/deepseek-v4-flash",
+    "zilliz2/deepseek-v4-pro",
+    "openrouter/deepseek/deepseek-v4-flash-0731",
+    "opencode-go/muse-spark-1.2-contributor",
+    "opencode-go/ox-alpha-free"
+  ]
+}
