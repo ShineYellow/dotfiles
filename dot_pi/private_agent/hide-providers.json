@@ -1,0 +1,1201 @@
+{
+  "hide": [
+    {
+      "provider": "amazon-bedrock"
+    },
+    {
+      "provider": "ant-ling"
+    },
+    {
+      "provider": "anthropic"
+    },
+    {
+      "provider": "azure-openai-responses"
+    },
+    {
+      "provider": "baseten"
+    },
+    {
+      "provider": "cerebras"
+    },
+    {
+      "provider": "cloudflare-ai-gateway"
+    },
+    {
+      "provider": "cloudflare-workers-ai"
+    },
+    {
+      "provider": "deepseek"
+    },
+    {
+      "provider": "fireworks"
+    },
+    {
+      "provider": "google"
+    },
+    {
+      "provider": "google-vertex"
+    },
+    {
+      "provider": "groq"
+    },
+    {
+      "provider": "huggingface"
+    },
+    {
+      "provider": "kimi-coding"
+    },
+    {
+      "provider": "minimax"
+    },
+    {
+      "provider": "minimax-cn"
+    },
+    {
+      "provider": "mistral"
+    },
+    {
+      "provider": "moonshotai"
+    },
+    {
+      "provider": "moonshotai-cn"
+    },
+    {
+      "provider": "nvidia"
+    },
+    {
+      "provider": "openai"
+    },
+    {
+      "provider": "opencode"
+    },
+    {
+      "provider": "openrouter"
+    },
+    {
+      "provider": "qwen-token-plan"
+    },
+    {
+      "provider": "qwen-token-plan-cn"
+    },
+    {
+      "provider": "qwen-token-plan-individual"
+    },
+    {
+      "provider": "together"
+    },
+    {
+      "provider": "vercel-ai-gateway"
+    },
+    {
+      "provider": "xiaomi"
+    },
+    {
+      "provider": "xiaomi-token-plan-ams"
+    },
+    {
+      "provider": "xiaomi-token-plan-cn"
+    },
+    {
+      "provider": "xiaomi-token-plan-sgp"
+    },
+    {
+      "provider": "zai"
+    },
+    {
+      "provider": "zai-coding-cn"
+    },
+    {
+      "provider": "xai",
+      "model": "grok-4.3"
+    },
+    {
+      "provider": "xai",
+      "model": "grok-4.5"
+    },
+    {
+      "provider": "xai",
+      "model": "grok-build-0.1"
+    },
+    {
+      "provider": "cursor",
+      "model": "auto-smart"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-fable-5@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-fable-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "fable@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "fable@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "fable-5@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "fable-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-haiku-4-5"
+    },
+    {
+      "provider": "cursor",
+      "model": "haiku-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "haiku"
+    },
+    {
+      "provider": "cursor",
+      "model": "haiku-4.5"
+    },
+    {
+      "provider": "cursor",
+      "model": "haiku-4-5"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-5"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.5"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-5"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-6@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.6@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-6@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-7@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-7@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-7@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-7@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-7@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-7@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.7@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.7@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.7@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.7@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.7@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.7@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-7@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-7@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-7@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-7@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-7@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-7@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-8@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-8@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-8@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-8@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-8@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-4-8@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.8@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.8@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.8@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.8@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.8@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4.8@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-8@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-8@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-8@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-8@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-8@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-4-8@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-5@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-5@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-5@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-5@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-opus-5@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-5@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-5@300k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-5@300k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-5@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "opus-5@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-sonnet-4@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-sonnet-4-5@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4.5@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4-5@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-sonnet-4-6@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-sonnet-4-6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4.6@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4.6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4-6@200k"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-4-6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-sonnet-5@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "claude-sonnet-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-5@300k"
+    },
+    {
+      "provider": "cursor",
+      "model": "sonnet-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2.5"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2.5:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2.5:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-latest:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-latest:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2-5"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2-5:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "composer-2-5:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "default"
+    },
+    {
+      "provider": "cursor",
+      "model": "auto"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-3-flash"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-3.1-pro"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-pro-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-pro"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "cursor",
+      "model": "gemini-3.7-flash"
+    },
+    {
+      "provider": "cursor",
+      "model": "glm-5.2"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-mini"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.1"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.2"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.2:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.2:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.3-codex"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.3-codex:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.3-codex:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex-latest:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex-latest:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex-5.3"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex-5.3:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "codex-5.3:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-mini-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.4-nano"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-nano-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-nano"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.5@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.5@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.5@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.5@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.5@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-5@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-5@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-5@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-5@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-5@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-5@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-luna@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-luna@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-luna@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-luna@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-luna@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-luna@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-luna@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-luna@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-luna@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-luna@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-luna@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-luna@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-sol@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-sol@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-sol@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-sol@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-sol@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-sol@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-latest@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-latest@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-latest@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-latest@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-latest@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-latest@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-sol@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-sol@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-sol@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-sol@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-sol@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-sol@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-terra@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-terra@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-terra@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-terra@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-terra@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5.6-terra@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-terra@272k"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-terra@272k:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-terra@272k:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-terra@1m"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-terra@1m:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "gpt-5-6-terra@1m:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "grok-4.5"
+    },
+    {
+      "provider": "cursor",
+      "model": "grok-4.5:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "grok-4.5:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "grok-4.6:fast"
+    },
+    {
+      "provider": "cursor",
+      "model": "grok-4.6:slow"
+    },
+    {
+      "provider": "cursor",
+      "model": "kimi-k2.7-code"
+    },
+    {
+      "provider": "cursor",
+      "model": "kimi-latest"
+    },
+    {
+      "provider": "cursor",
+      "model": "kimi"
+    },
+    {
+      "provider": "cursor",
+      "model": "kimi-k3"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "minimax-m3"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "deepseek-v4-flash"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "deepseek-v4-flash-vision-exp"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "glm-5.1"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "glm-5.2"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "glm-5.3"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "kimi-k2.6"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "kimi-k2.7-code"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "kimi-k3"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "longcat-2.0"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "mimo-v2.5"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "mimo-v2.5-pro"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "minimax-m2.7"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "ox-alpha-free"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "qwen3.6-plus"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "qwen3.7-max"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "qwen3.7-plus"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "qwen3.8-max"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "gpt-5.6-luna"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "grok-4.5"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "grok-4.6"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.3-codex-spark"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.4"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.5"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.6-luna"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-haiku-4.5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-opus-4.5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-opus-4.6"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-opus-4.7"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-opus-4.8"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-opus-5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-sonnet-4"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-sonnet-4.5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-sonnet-4.6"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-sonnet-5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "claude-fable-5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gemini-3.1-pro-preview"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gemini-3.6-flash"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gemini-3.7-flash"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-4.1"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "kimi-k2.7-code"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "kimi-k3"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5-mini"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.2"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.2-codex"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.3-codex"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.4"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.4-nano"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.6-luna"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "grok-4.5"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "grok-4.6"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "mai-code-1-flash-picker"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "mai-code-1.1-flash"
+    },
+    {
+      "provider": "github-copilot",
+      "model": "gpt-5.6-sol"
+    }
+  ]
+}
