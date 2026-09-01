@@ -1,0 +1,7 @@
+working-directory = "/Users/samhuang/git"
+keybind = shift+enter=text:\n
+keybind = global:cmd+backquote=toggle_quick_terminal
+copy-on-select = true
+
+
+
