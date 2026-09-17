@@ -839,10 +839,6 @@
     },
     {
       "provider": "cursor",
-      "model": "gpt-5-6-sol@1m:fast"
-    },
-    {
-      "provider": "cursor",
       "model": "gpt-5-6-sol@1m:slow"
     },
     {
@@ -1043,10 +1039,6 @@
     },
     {
       "provider": "openai-codex",
-      "model": "gpt-5.3-codex-spark"
-    },
-    {
-      "provider": "openai-codex",
       "model": "gpt-5.4"
     },
     {
@@ -1183,10 +1175,6 @@
     },
     {
       "provider": "github-copilot",
-      "model": "grok-4.6"
-    },
-    {
-      "provider": "github-copilot",
       "model": "mai-code-1-flash-picker"
     },
     {
@@ -1196,6 +1184,14 @@
     {
       "provider": "github-copilot",
       "model": "gpt-5.6-sol"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "hy4-preview"
+    },
+    {
+      "provider": "opencode-go",
+      "model": "muse-spark-1.2-contributor"
     }
   ]
 }
